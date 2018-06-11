@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/gray_F5"
+    android:layout_height="match_parent">
+
+    <com.mylhyl.crlayout.SwipeRefreshRecyclerView
+        xmlns:crl="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/srrv_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_F5"
+        android:listSelector="@android:color/transparent"
+        crl:load_animator="true"/>
+
+    <TextView
+        android:id="@+id/tv_no_orders"
+        style="@style/text_9_16"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/none_notify"
+        android:text="暂无可发起的订单"
+        android:visibility="gone"/>
+</RelativeLayout>

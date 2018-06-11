@@ -1,0 +1,169 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+         -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="title_gray" parent="text_3_16">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="remark_info" parent="text_3_14">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="orderinfo_button" parent="text_f_16">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@color/black_3</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="line_point5_m_d8">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/gray_D8</item>
+    </style>
+
+    <style name="line_m_11_F2F3F4">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">11dp</item>
+        <item name="android:background">@color/gray_F5</item>
+    </style>
+
+    <style name="line_m_10_F2F3F4">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">@color/gray_F5</item>
+    </style>
+
+    <style name="line_m_3_3">
+        <item name="android:layout_width">11dp</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/circle8_333</item>
+    </style>
+
+    <style name="line_D8_margin15" parent="line_D8">
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+
+    <style name="line_wpoint5_e6">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:background">@color/gray_E6</item>
+    </style>
+
+    <style name="ratingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">1</item>
+    </style>
+
+    <style name="text_weekday" >
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/black_6C6F73</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="count_price_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">9dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="count_price_text_show" parent="text_3_16">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">18dp</item>
+    </style>
+
+    <style name="count_price_text_price" parent="text_3_16">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="info_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="info_text" parent="text_9_16">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="info_edit" parent="text_3_16">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textColorHint">@color/gray_C0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="activate_edit" parent="text_3_16">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">49dp</item>
+        <item name="android:textColorHint">@color/gray_C0</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:background">@drawable/circle5_f_point5_b2</item>
+    </style>
+
+    <style name="edit_c0_title_color_16" parent="text_3_16">
+        <item name="android:textColorHint">@color/gray_C0</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="edit_c0_title_color_12" parent="text_3_12">
+        <item name="android:textColorHint">@color/gray_C0</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="SendDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="belowPupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
+</resources>

@@ -1,0 +1,11 @@
+apply plugin: 'java'
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+dependencies {
+    compile 'de.greenrobot:greendao-generator:2.1.0'
+}

@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.ctsmedia.hltravel"
+          android:versionCode="16"
+          android:versionName="1.5.2">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19"/>
+
+    <!-- 杀死进程的权限 -->
+    <!-- <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" /> -->
+
+
+    <!-- 打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- 电源监听 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 扫描二维码 相机 直播 运行需要的权限 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO">
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <!-- 推送服务 运行需要的权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- 写sd卡运行需要的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 联网 运行需要的权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 微信支付 运行需要的权限 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <!-- 震动所需权限 -->
+    <uses-permission android:name="Android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <!-- 地图 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <!-- 分享所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- 获取通讯录权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!--
+    <uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES" />
+    <uses-permission android:name="android.permission.INSTALL_LOCATION_PROVIDER" />
+    -->
+    <application
+        android:name="com.travel.app.TravelApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/DayTheme"
+        android:largeHeap="true"
+        tools:replace="android:theme, android:icon, android:name, android:label">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="74c3fb5b5bc0fa1a2ca7651e2661da3a"/>
+
+        <activity
+            android:name="com.travel.shop.activity.ZhaoHangPayActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.app.whatisnew.WhatsNewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThatsNewTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.travel.activity.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.travel.activity.HomeActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.travel.activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.travel.login"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.travel.activity.RegistActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.usercenter.MoreFragmentActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.usercenter.ModifyPassword"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.activity.ChangeHeadImageActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 回放播放器页面 -->
+        <activity
+            android:name="com.travel.video.playback_video.PlaybackVideoPlayerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.travel.video.playback_video"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:mimeType="vnd.android.cursor.item/xxx"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.travel.video.MyHistoryLiveVideoListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.travel.activity.StoryHomeListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.travel.activity.StoryHomeListActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.travel.video.LiveHomeListActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 获取当前位置服务 -->
+        <!-- <service android:name="com.travel.map.LocationService" /> -->
+
+
+        <!-- 直播页面 -->
+        <activity
+            android:name="com.travel.video.live.HostWindowActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:mimeType="vnd.android.cursor.item/xxx"/>
+            </intent-filter>
+        </activity>
+        <!-- 回放类别列表页 -->
+        <!-- 活动页 -->
+        <activity
+            android:name="com.travel.video.activitys_notice.ActivityListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.travel.video.activitys"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:mimeType="vnd.android.cursor.item/xxx"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.travel.localfile.pk.activity.PublicVoteActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.localfile.LocalVideoCheckActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.localfile.PublishVideoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.map.AmapLocationActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.map.RouteActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.travel.map.RouteActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.travel.activity.SettingPasswordActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.usercenter.PersonalDataActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="com.travel.usercenter.PersonalDataActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.travel.usercenter.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.travel.usercenter.AboutMeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.travel.video.activitys_notice.ActivitysVoteRankActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 聊天消息相关 -->
+        <activity
+            android:name="com.travel.communication.activity.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.travel.communication.activity.ChatActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.travel.activity.GroupMemberActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.travel.activity.OneFragmentActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.travel.localfile.pk.activity.EvidenceSelectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.travel.localfile.LocalVideoUploadActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.travel.activity.OneFragmentSingleTopActivity"
+            android:screenOrientation="portrait"/>
+
+        <receiver android:name="com.travel.utils.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.travel.localfile.pk.others.FileUploadService"/>
+
+        <!-- 公告页 -->
+        <activity android:name="com.travel.video.activitys_notice.NoticeActivity">
+            <intent-filter>
+                <action android:name="com.travel.video.notice"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:mimeType="vnd.android.cursor.item/xxx"/>
+            </intent-filter>
+        </activity>
+
+        <!-- "出发"选项卡的activity的注册 -->
+        <activity
+            android:name="com.travel.shop.activity.ManagerOrderActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.shop.activity.EvaluateActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.photoselector.ui.PhotoSelectorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.photoselector.ui.PhotoPreviewActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.shop.activity.PersonalHomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.travel.mine"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.travel.usercenter.FeedbackActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.usercenter.LiveIncomeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.usercenter.RechargeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.travel.usercenter.RechargeActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="vnd.android.cursor.item/xxx">
+                </data>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.travel.usercenter.WithDrawApplicationActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.usercenter.WithDrawCashActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.usercenter.BusinessDetailsViewActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.usercenter.LiveDetailsViewActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.usercenter.BusinessIncomeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.shop.activity.ApplicationPublicVoteActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.travel.activity.MyBoxRoomActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 分享组件 -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.sharesdk.tencent.qq.ReceiveActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1105344452" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"/>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"/>
+
+        <receiver android:name="net.sourceforge.simcpux.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <activity android:name="com.travel.video.live.CheckProductActivity"/>
+        <activity android:name="com.travel.shop.activity.AddTouristActivity"/>
+        <activity android:name="com.travel.shop.activity.TouristsActivity"/>
+        <!--android:launchMode="singleTop"-->
+        <activity android:name="com.travel.shop.activity.OrderSuccessActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.travel.shop.activity.OrderSuccessActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.travel.shop.activity.OrderInfoActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.travel.shop.activity.OrderInfoActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!-- alipay sdk end -->
+
+
+        <!-- ================================================== -->
+        <!-- 腾讯云IM推送所需服务 -->
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service android:name="com.amap.api.location.APSService"/>
+        <service android:name="com.travel.localfile.pk.others.FileUploadService"/>
+
+        <!-- 招行支付 -->
+        <activity
+            android:name="cmb.pb.ui.PBKeyboardActivity"
+            android:theme="@style/CmbDialogStyleBottom">
+        </activity>
+
+        <service
+            android:name="cmb.pb.cmbsafe.CmbService"
+            android:exported="false"/>
+
+        <activity
+            android:name="com.travel.usercenter.MyFollowActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 消息收发service -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalService"
+            android:exported="false"
+            android:process=":QALSERVICE">
+        </service>
+        <!-- 消息收发辅助service -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalAssistService"
+            android:exported="false"
+            android:process=":QALSERVICE">
+        </service>
+        <!-- 离线消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.QALBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.tencent.qalsdk.broadcast.qal"/>
+            </intent-filter>
+        </receiver>
+        <!-- 系统消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.core.NetConnInfoCenter"
+            android:process=":QALSERVICE">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- ======华为离线推送======= -->
+        <!-- 接收Push消息（注册、Push消息、Push连接状态、标签，LBS上报结果）广播 -->
+        <receiver android:name="com.travel.app.receive.HwPushMessageReceiver">
+            <intent-filter>
+
+                <!-- 必须,用于接收token -->
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <!-- 必须，用于接收消息 -->
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+                <!-- 可选，用于点击通知栏或通知栏上的按钮后触发onEvent回调 -->
+                <action android:name="com.huawei.android.push.intent.CLICK"/>
+                <!-- 可选，查看push通道是否连接，不查看则不需要 -->
+                <action android:name="com.huawei.intent.action.PUSH_STATE"/>
+                <!-- 可选，标签、地理位置上报回应，不上报则不需要 -->
+                <action android:name="com.huawei.android.push.plugin.RESPONSE"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="CS_cloud_ablitity"
+                android:value="successRateAnalytics"/>
+        </receiver>
+
+        <!-- PushSDK:PushSDK接收外部请求事件入口 -->
+        <receiver
+            android:name="com.huawei.android.pushagent.PushEventReceiver"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REFRESH_PUSH_CHANNEL"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+                <action android:name="com.huawei.intent.action.PUSH_ON"/>
+                <action android:name="com.huawei.android.push.PLUGIN"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.huawei.android.pushagent.PushBootReceiver"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTER"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="CS_cloud_version"
+                android:value="\u0032\u0037\u0030\u0035"/>
+        </receiver>
+
+        <!-- PushSDK:Push服务 -->
+        <service
+            android:name="com.huawei.android.pushagent.PushService"
+            android:process=":pushservice">
+        </service>
+        <!-- ================================================== -->
+
+        <activity
+            android:name="com.travel.usercenter.SellerControlActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.travel.usercenter.PlanListActivity"/>
+        <activity android:name="com.travel.shop.activity.StoryCardActivity"/>
+        <activity android:name="com.travel.shop.activity.CreateBarCodeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.travel.activity.SearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.travel.activity.ProductListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.travel.activity.HomeStoryMoreAcrivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.travel.activity.PublishTalkActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.travel.map.NearbyLocationListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.zxing.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+    </application>
+
+</manifest>

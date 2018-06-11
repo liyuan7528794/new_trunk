@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_FF2942"
+    tools:context="com.travel.lib.fragment_interface.BlankFragment">
+
+    <TextView
+        android:id="@+id/fragmentSend"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/yellow_FFC108"
+        android:textSize="18sp"
+        android:text="我是Fagment，点击给Activity传值" />
+
+    <TextView
+        android:id="@+id/fragmentReveiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:text="Activity返回的数据"/>
+
+</FrameLayout>

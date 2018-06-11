@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/income_icon_style"
+            android:drawableTop="@drawable/icon_redmoney"
+            android:text="@string/withdrawcash_redmoney" />
+
+        <TextView
+            android:id="@+id/tv_redmoney_balance"
+            style="@style/text_red_36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+        <View style="@style/line_B2" />
+
+        <GridView
+            android:id="@+id/gv_face_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:choiceMode="singleChoice"
+            android:horizontalSpacing="15dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:verticalSpacing="10dp" >
+        </GridView>
+
+        <TextView
+            android:id="@+id/tv_recharge"
+            style="@style/text_f_17"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black_3"
+            android:gravity="center"
+            android:text="@string/liveincome_recharge" />
+    </LinearLayout>
+
+</LinearLayout>

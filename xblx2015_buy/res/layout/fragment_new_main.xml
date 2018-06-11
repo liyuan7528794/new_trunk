@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.travel.fragment.NewMainFragment">
+
+    <com.mylhyl.crlayout.SwipeRefreshRecyclerView
+        android:id="@+id/srv_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.mylhyl.crlayout.SwipeRefreshRecyclerView>
+
+    <TextView
+        android:id="@+id/none_video"
+        style="@style/text_3_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="暂无精彩视频"
+        android:visibility="gone"/>
+</FrameLayout>

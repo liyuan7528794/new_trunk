@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/cb_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.bigkoo.convenientbanner.ConvenientBanner>
+
+    <RelativeLayout
+        android:id="@+id/whatisnew_mainRLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/welcomebackgroud01" />
+
+        <RelativeLayout
+            android:id="@+id/scrollRelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.travel.app.whatisnew.MyScrollLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/whatisnew_ScrollLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/welcome_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:scaleType="fitXY" />
+
+
+                <ImageView
+                    android:id="@+id/welcome_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/welcome_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY" />
+                <!-- <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null" >
+                    <Button
+                        android:id="@+id/startBtn"
+                        android:layout_width="145dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="45dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/whatisnew_btn_bg" />
+                </RelativeLayout> -->
+
+            </com.travel.app.whatisnew.MyScrollLayout>
+
+            <LinearLayout
+                android:id="@+id/whatisnew_llayout_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="24.0dip"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:contentDescription="@string/hello_world"
+                    android:padding="5.0dip"
+                    android:src="@drawable/whatisnew_page_indicator_bg" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:contentDescription="@string/hello_world"
+                    android:padding="5.0dip"
+                    android:src="@drawable/whatisnew_page_indicator_bg" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:contentDescription="@string/hello_world"
+                    android:padding="5.0dip"
+                    android:src="@drawable/whatisnew_page_indicator_bg"
+                    android:visibility="gone" />
+
+                <!--<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:contentDescription="@string/hello_world"
+                    android:padding="5.0dip"
+                    android:src="@drawable/whatisnew_page_indicator_bg" />-->
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

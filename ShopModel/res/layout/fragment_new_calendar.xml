@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_goods_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="27dp"></android.support.v7.widget.RecyclerView>
+
+        <View
+            style="@style/line_f8"
+            android:layout_marginRight="31dp"
+            android:layout_marginTop="28dp"></View>
+
+        <TextView
+            android:id="@+id/tv_selected_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black_6C6F73"
+            android:textSize="15dp"
+            tools:text="2017-11:"/>
+
+        <!-- 日历内容 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_weekday"
+                    android:text="日"/>
+
+                <TextView
+                    style="@style/text_weekday"
+                    android:text="一"/>
+
+                <TextView
+                    style="@style/text_weekday"
+                    android:text="二"/>
+
+                <TextView
+                    style="@style/text_weekday"
+                    android:text="三"/>
+
+                <TextView
+                    style="@style/text_weekday"
+                    android:text="四"/>
+
+                <TextView
+                    style="@style/text_weekday"
+                    android:text="五"/>
+
+                <TextView
+                    style="@style/text_weekday"
+                    android:text="六"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <com.travel.layout.MyGridView
+                    android:id="@+id/gv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:verticalSpacing="20dp"
+                    android:focusable="false"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="7">
+                </com.travel.layout.MyGridView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 选择的日期 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/tv_selected_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_sum_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

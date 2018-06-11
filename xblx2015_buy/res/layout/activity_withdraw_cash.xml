@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_withdraw_cash_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/income_icon_style"
+            android:background="@color/white"
+            android:drawableTop="@drawable/icon_redmoney"
+            android:text="@string/withdrawcash_redmoney" />
+
+        <TextView
+            android:id="@+id/tv_redmoney_total"
+            style="@style/text_red_36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="0" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/gray_F5" />
+
+        <LinearLayout style="@style/ll_withdraw_cash" >
+
+            <TextView
+                style="@style/text_3_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/withdraw_cash" />
+
+            <EditText
+                android:id="@+id/et_redmoney_exchange"
+                style="@style/et_withdraw_cash"
+                android:digits="1234567890"
+                android:singleLine="true"
+                android:hint="@string/withdrawcash_exchange_input"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_exchange_money"
+            style="@style/text_9_14"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/gray_F5"
+            android:gravity="right|center_vertical"
+            android:paddingRight="15dp"
+            android:text="@string/withdrawcash_exchange_display" />
+
+        <LinearLayout style="@style/ll_withdraw_cash" >
+
+            <TextView
+                style="@style/text_3_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/withdrawcash_alipay" />
+
+            <EditText
+                android:id="@+id/et_alipay_account"
+                style="@style/et_withdraw_cash"
+                android:singleLine="true"
+                android:hint="@string/withdrawcash_alipay_input"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <View style="@style/line_B2" />
+
+        <LinearLayout style="@style/ll_withdraw_cash" >
+
+            <TextView
+                style="@style/text_3_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/withdrawcash_name" />
+
+            <EditText
+                android:id="@+id/et_name"
+                style="@style/et_withdraw_cash"
+                android:singleLine="true"
+                android:hint="@string/withdrawcash_name_input" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_F5"
+            android:orientation="vertical"
+            android:paddingTop="30dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_immediately_withdraw"
+                    style="@style/text_f_17"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/black_3"
+                    android:gravity="center"
+                    android:text="@string/withdrawcash_immediately" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_question_withdraw_cash"
+                style="@style/text_9_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="@string/liveincome_question"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

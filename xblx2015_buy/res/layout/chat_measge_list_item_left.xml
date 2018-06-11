@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent"
+              android:orientation="vertical"
+              android:paddingTop="10dp"
+              tools:background="@android:color/darker_gray">
+
+    <include
+        layout="@layout/chat_message_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"
+            tools:src="@drawable/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/text_6_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/iv_header"
+            android:text="名称"/>
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="80dp"
+            android:layout_toRightOf="@+id/iv_header">
+
+            <com.rockerhieu.emojicon.EmojiconTextView
+                android:id="@+id/tv_message"
+                style="@style/text_3_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:autoLink="web"
+                android:background="@drawable/chat_text_left_bg_day"
+                android:lineSpacingMultiplier="1.1"
+                android:linksClickable="false"
+                android:minWidth="52dp"
+                android:maxWidth="235dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColorLink="@color/yellow_FFC108"
+                android:visibility="gone"
+                emojicon:emojiconSize="20dp"
+                tools:text="我们都是好孩子， \n 不是么"
+                tools:visibility="visible"/>
+
+            <LinearLayout
+                android:id="@+id/ll_voice_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rl_voice_width"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/chat_text_left_bg_day"
+                    android:maxWidth="235dp"
+                    android:minWidth="52dp"
+                    android:padding="10dp"
+                    android:paddingLeft="15dp">
+
+                    <ImageView
+                        android:id="@+id/iv_voice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:tag="left"
+                        android:paddingRight="20dp"
+                        android:src="@drawable/chat_voice_left"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_voice_time"
+                    style="@style/text_6_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    tools:text="55'"/>
+
+                <ProgressBar
+                    android:id="@+id/pb_voice"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+            </LinearLayout>
+
+            <com.travel.layout.ChatImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_chat_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:visibility="gone"
+                app:chat_image_mask="@drawable/chat_text_left_bg_day"/>
+
+            <include
+                layout="@layout/chat_video_layout"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

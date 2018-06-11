@@ -1,0 +1,16 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:foreground="@color/transparent"
+    android:layout_height="match_parent">
+
+    <com.mylhyl.crlayout.SwipeRefreshRecyclerView
+        xmlns:crl="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/srrv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        crl:load_animator="true"/>
+
+</FrameLayout>

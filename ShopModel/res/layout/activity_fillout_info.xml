@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_F5"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="1dp"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="确认商品信息："
+                        android:textColor="@color/black_6C6F73"
+                        android:textSize="12dp"/>
+
+                    <View
+                        style="@style/line_f8"
+                        android:layout_marginRight="31dp"
+                        android:layout_marginTop="10dp"></View>
+
+                    <TextView
+                        android:id="@+id/tv_goods_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/black_6C6F73"
+                        android:textSize="18dp"
+                        tools:text="台州|家住黄岩"/>
+
+                    <TextView
+                        android:id="@+id/tv_goods_intro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="34dp"
+                        android:layout_marginTop="11dp"
+                        android:textColor="@color/black_6C6F73"
+                        android:textSize="12dp"
+                        tools:text="家住黄岩，感受王敏智的智慧，大城市回归小乡村，守住
+当地文化"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black_6C6F73"
+                            android:textSize="12dp"
+                            tools:text="成人：2人"/>
+
+                        <TextView
+                            android:id="@+id/tv_startDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_count"
+                            android:gravity="right"
+                            android:textColor="@color/black_6C6F73"
+                            android:textSize="12dp"
+                            tools:text="出行日期：2017-11-03"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cd_twice_need"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:drawableLeft="@drawable/oval_fa7e7f_8"
+                    android:drawablePadding="15dp"
+                    android:gravity="center_vertical"
+                    android:text="此产品需二次确认，商家将在3个工作日内（工作日9：00-18：00）核实是否有位"
+                    android:textColor="@color/black_6C6F73"
+                    android:textSize="12dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cd_tourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_fillout_count"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="17dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/black_6C6F73"
+                            android:textSize="12dp"
+                            tools:text="出行人信息：  添加3位出行人"/>
+
+                        <ImageView
+                            android:id="@+id/iv_add_tourist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="25dp"
+                            android:src="@drawable/icon_add_tourist"/>
+                    </LinearLayout>
+
+                    <View
+                        style="@style/line_f8"
+                        android:layout_marginRight="31dp"></View>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_tourist_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="31dp"></android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="25dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="联系人信息："
+                            android:textColor="@color/black_6C6F73"
+                            android:textSize="12dp"/>
+
+                        <ImageView
+                            android:id="@+id/iv_local_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/icon_phone_book"/>
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/line_f8"
+                        android:layout_marginRight="31dp"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/fill_out_contact_show"
+                            android:text="姓名"/>
+
+                        <EditText
+                            android:id="@+id/et_contact_name"
+                            style="@style/fill_out_contact_edit"
+                            android:maxLines="1"
+                            tools:text="姓名"/>
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/line_f8"
+                        android:layout_marginRight="31dp"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/fill_out_contact_show"
+                            android:text="手机号码"/>
+
+                        <EditText
+                            android:id="@+id/et_contact_phone"
+                            style="@style/fill_out_contact_edit"
+                            android:maxLines="1"
+                            tools:text="手机号"/>
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/line_f8"
+                        android:layout_marginRight="31dp"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/fill_out_contact_show"
+                            android:text="留言："/>
+
+                        <EditText
+                            android:id="@+id/et_contact_mark"
+                            style="@style/fill_out_contact_edit"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cd_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="1dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="优惠："
+                        android:textColor="@color/black_6C6F73"
+                        android:textSize="12dp"/>
+
+                    <View
+                        style="@style/line_f8"
+                        android:layout_marginRight="31dp"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_card_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="小城故事卡"
+                            android:textColor="@color/black_48494C"
+                            android:textSize="16dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_remain_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/black_6D6D70"
+                            android:textSize="12dp"
+                            tools:text="剩余9次"/>
+
+                        <TextView
+                            android:id="@+id/tv_minus_count"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/red_FA7E7F"
+                            android:textSize="12dp"
+                            tools:text="-3"/>
+
+                        <ImageView
+                            android:id="@+id/iv_card_select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/selector_select_use"/>
+                    </LinearLayout>
+
+                    <View
+                        style="@style/line_f8"
+                        android:layout_marginRight="31dp"></View>
+
+                    <LinearLayout
+                        android:id="@+id/ll_coupon_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_coupon_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="优惠券"
+                            android:textColor="@color/black_48494C"
+                            android:textSize="16dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_minus_money"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/red_FA7E7F"
+                            android:textSize="12dp"
+                            tools:text="-800"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/icon_my_arrow"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="19dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计："
+            android:textColor="@color/black_6C6F73"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/tv_fillout_total_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/red_FA7E7F"
+            android:textSize="14dp"
+            tools:text="￥6150"/>
+
+        <TextView
+            android:id="@+id/tv_pay"
+            android:layout_width="148dp"
+            android:layout_height="33dp"
+            android:background="@drawable/circle88_fa7e7f"
+            android:gravity="center"
+            android:text="支付"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+    </LinearLayout>
+</LinearLayout>

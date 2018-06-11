@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/bg_book"
+        android:paddingBottom="15dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="14dp"
+        android:paddingTop="18dp">
+
+        <com.travel.layout.PageListWidget
+            android:id="@+id/page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_page"></com.travel.layout.PageListWidget>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/transparent"/>
+    </FrameLayout>
+</LinearLayout>

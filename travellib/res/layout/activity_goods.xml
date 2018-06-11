@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_F5">
+    <!-- 下架显示 -->
+    <TextView
+        android:id="@+id/tv_goods_undercarriage"
+        style="@style/text_9_16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="此商品已下架"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_goods_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_down_picture"
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:scaleType="centerCrop" />
+
+        <com.travel.layout.HeadZoomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/dzsv_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:background="@android:color/transparent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_up_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="148dp"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.travel.layout.ArcView
+                        android:id="@+id/av_arc"
+                        android:layout_width="match_parent"
+                        android:layout_height="9dp"
+                        android:layout_marginTop="139dp"
+                        app:arcColor="@color/gray_F5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_F5"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="16dp"
+                            app:cardBackgroundColor="@color/white_alpha88"
+                            app:cardCornerRadius="2dp"
+                            app:cardElevation="1dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        style="@style/goods_layout_title"
+                                        android:text="商品信息：" />
+
+                                    <!-- 仿抖音版去掉 -->
+                                    <TextView
+                                        android:id="@+id/tv_card_count"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="right"
+                                        android:textColor="@color/red_FA7E7F"
+                                        android:textSize="12dp"
+                                        android:visibility="gone"
+                                        tools:text="还剩1000张" />
+
+                                </LinearLayout>
+
+                                <View
+                                    style="@style/line_f8"
+                                    android:layout_marginRight="31dp"
+                                    android:layout_marginTop="10dp"></View>
+
+                                <TextView
+                                    android:id="@+id/tv_goods_title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="15dp"
+                                    android:textColor="@color/black_6C6F73"
+                                    android:textSize="18dp"
+                                    tools:text="商品标题" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_marginTop="15dp">
+
+                                    <TextView
+                                        android:id="@+id/tv_original_cost"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black_6C6F73"
+                                        android:textSize="12dp"
+                                        android:layout_marginBottom="20dp"
+                                        tools:text="原价：￥2000/城" />
+
+                                    <TextView
+                                        android:id="@+id/tv_current_cost_desc"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_original_cost"
+                                        android:layout_marginTop="2dp"
+                                        android:text="现价："
+                                        android:textColor="@color/black_6C6F73"
+                                        android:textSize="12dp"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/tv_current_cost"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBottom="@+id/tv_current_cost_desc"
+                                        android:layout_toRightOf="@+id/tv_current_cost_desc"
+                                        android:textColor="@color/red_FA7E7F"
+                                        android:textSize="12dp"
+                                        android:visibility="gone"
+                                        tools:text="￥1000/城" />
+
+                                    <include
+                                        android:id="@+id/ll_card_control"
+                                        layout="@layout/layout_m_p"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentRight="true"
+                                        android:visibility="gone"
+                                        tools:visibility="visible"></include>
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:visibility="gone"
+                                    style="@style/text_8_11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_marginTop="9dp"
+                                    android:text="【红了旅行】百城Mapping Drafter活动期间（2018.6.1-2018.12.31），平台所有先旅游后买单产品在原价2000元/城的基础上半价优惠，优惠价格为1000元/城。活动结束后，所有产品恢复为原价2000元/城。" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cd_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="@color/white_alpha88"
+                            app:cardCornerRadius="2dp"
+                            app:cardElevation="1dp"
+                            tools:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        style="@style/goods_layout_title"
+                                        android:layout_marginTop="0dp"
+                                        android:text="套餐优惠：" />
+
+                                    <TextView
+                                        android:id="@+id/tv_cards"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="15dp"
+                                        android:gravity="right"
+                                        android:textColor="@color/red_FA7E7F"
+                                        android:textSize="12dp"
+                                        tools:text="还剩3次" />
+                                </RelativeLayout>
+
+                                <View
+                                    style="@style/line_f8"
+                                    android:layout_marginRight="31dp"
+                                    android:layout_marginTop="10dp"></View>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_card_desc"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="15dp"
+                                        android:text="小城故事卡价："
+                                        android:textColor="@color/black_6C6F73"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_card_price"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBottom="@+id/tv_card_desc"
+                                        android:layout_toRightOf="@+id/tv_card_desc"
+                                        android:text="￥1000/城"
+                                        android:textColor="@color/red_FA7E7F"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_buy_card"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="15dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@drawable/circle29_f_one_f1"
+                                        android:paddingBottom="10dp"
+                                        android:paddingLeft="20dp"
+                                        android:paddingRight="20dp"
+                                        android:paddingTop="10dp"
+                                        android:text="购买小城故事卡"
+                                        android:textColor="@color/black_6C6F73"
+                                        android:textSize="12dp" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_card_intro"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="中旅旗下红了旅行app豪送1000万，限量推出1000张五折小城故事卡。该卡为可游玩10城的套餐卡，折合1000元/人/城！"
+                                    android:textColor="@color/gray_BDC0C4"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cd_coupon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="@color/white_alpha88"
+                            app:cardCornerRadius="2dp"
+                            app:cardElevation="1dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/goods_layout_title"
+                                    android:text="新用户优惠：" />
+
+                                <View
+                                    style="@style/line_f8"
+                                    android:layout_marginRight="31dp"
+                                    android:layout_marginTop="10dp"></View>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rv_coupon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="19dp"></android.support.v7.widget.RecyclerView>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cd_ensure"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="@color/white_alpha88"
+                            app:cardCornerRadius="2dp"
+                            app:cardElevation="1dp"
+                            tools:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/goods_layout_title"
+                                    android:text="我们的保障：" />
+
+                                <View
+                                    style="@style/line_f8"
+                                    android:layout_marginRight="31dp"
+                                    android:layout_marginTop="10dp"></View>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="20dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_ensure_left"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="先旅游后买单"
+                                        android:textColor="@color/black_6C6F73"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_ensure_right"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="该不该买单"
+                                        android:textColor="@color/black_6C6F73"
+                                        android:textSize="14dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <FrameLayout
+                            android:id="@+id/fl_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cd_selectable"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                app:cardBackgroundColor="@color/white_alpha88"
+                                app:cardCornerRadius="2dp"
+                                app:cardElevation="1dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/ll_layout2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:orientation="horizontal"
+                                        android:paddingTop="20dp">
+
+                                        <TextView
+                                            android:id="@+id/tv2_1"
+                                            style="@style/goods_layout_selectable"
+                                            android:text="玩去旅程" />
+
+                                        <TextView
+                                            android:id="@+id/tv2_2"
+                                            style="@style/goods_layout_selectable"
+                                            android:text="预定须知" />
+
+                                        <TextView
+                                            android:id="@+id/tv2_3"
+                                            style="@style/goods_layout_selectable"
+                                            android:text="商品评价" />
+                                    </LinearLayout>
+
+
+                                    <FrameLayout
+                                        android:id="@+id/fl_container_goods"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="15dp"
+                                        android:layout_marginTop="20dp">
+
+                                    </FrameLayout>
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </com.travel.layout.HeadZoomScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv1_1"
+                style="@style/goods_layout_selectable"
+                android:text="玩去旅程" />
+
+            <TextView
+                android:id="@+id/tv1_2"
+                style="@style/goods_layout_selectable"
+                android:text="预定须知" />
+
+            <TextView
+                android:id="@+id/tv1_3"
+                style="@style/goods_layout_selectable"
+                android:text="商品评价" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_goods_consult"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle88_f_point5_e8"
+                android:gravity="center"
+                android:text="在线客服"
+                android:textColor="@color/black_6C6F73"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_goods_order"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle88_fa7e7f"
+                android:gravity="center"
+                android:text="出行时间"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

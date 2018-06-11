@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_EDF0F3"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_delete_phone"
+            android:layout_gravity="right"/>
+        <LinearLayout
+            android:id="@+id/ll_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_EDF0F3"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_item_camera" />
+            <TextView
+                android:id="@+id/tv_checked_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black_6C6F73"
+                android:textSize="12dp"
+                android:text="1/9"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

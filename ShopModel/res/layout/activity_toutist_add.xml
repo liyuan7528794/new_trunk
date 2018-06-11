@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_F5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingRight="31dp"
+        android:background="@drawable/circle2_f_one_f1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textSize="12dp"
+            android:textColor="@color/black_6C6F73"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:gravity="center_vertical"
+            android:text="新增出行人信息："/>
+
+        <View style="@style/line_D8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="12dp"
+                android:textColor="@color/black_6C6F73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"/>
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:textColorHint="@color/black_373F47"
+                android:textColor="@color/black_373F47"
+                android:textSize="16sp"
+                android:hint="请输入姓名"/>
+        </LinearLayout>
+
+        <View style="@style/line_D8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="12dp"
+                android:textColor="@color/black_6C6F73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份证号"/>
+
+            <EditText
+                android:id="@+id/et_idcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:textColorHint="@color/black_373F47"
+                android:textColor="@color/black_373F47"
+                android:textSize="16sp"
+                android:hint="请输入身份证号"/>
+        </LinearLayout>
+
+        <View style="@style/line_D8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="12dp"
+                android:textColor="@color/black_6C6F73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号"/>
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:textColorHint="@color/black_373F47"
+                android:textColor="@color/black_373F47"
+                android:textSize="16sp"
+                android:hint="请输入手机号"/>
+        </LinearLayout>
+
+        <View style="@style/line_D8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="12dp"
+                android:textColor="@color/black_6C6F73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别"/>
+
+            <RadioGroup
+                android:id="@+id/rg_sex"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingRight="15dp">
+
+                <RadioButton
+                    android:id="@+id/rb_man"
+                    style="@style/text_3_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawablePadding="10dp"
+                    android:text="男" />
+
+                <RadioButton
+                    android:id="@+id/rb_woman"
+                    style="@style/text_3_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawablePadding="10dp"
+                    android:text="女" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/circle2_f_one_f1"
+        android:textColor="@color/black_373F47"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="保存"/>
+
+</LinearLayout>

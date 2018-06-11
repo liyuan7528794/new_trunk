@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_F5">
+
+    <!--<com.mylhyl.crlayout.RefreshScrollviewLayout-->
+        <!--android:id="@+id/scroll_video"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <com.travel.widget.VerticalViewPager
+            android:id="@+id/vvp_slide_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.travel.widget.VerticalViewPager>
+    <!--</com.mylhyl.crlayout.RefreshScrollviewLayout>-->
+</FrameLayout>

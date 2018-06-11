@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.travel.layout.SelectableRoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:sriv_left_top_corner_radius="5dp"
+        app:sriv_right_top_corner_radius="5dp"
+        app:sriv_left_bottom_corner_radius="5dp"
+        app:sriv_right_bottom_corner_radius="5dp"
+        android:id="@+id/iv_out_big_city_img"
+        android:layout_width="160dp"
+        android:layout_height="119dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_out_big_city"
+        style="@style/text_f_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

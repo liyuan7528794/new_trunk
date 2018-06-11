@@ -1,0 +1,65 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+
+        test {
+            java.srcDirs = ['test']
+        }
+    }
+    useLibrary "org.apache.http.legacy"
+}
+
+dependencies {
+    compile files('libs/aliyun-oss-sdk-android-2.2.0.jar')
+    compile files('libs/libammsdk.jar')
+    compile project(':library')
+    compile project(':commonrefreshlayout')
+    //依赖配置
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    compile rootProject.ext.dependencies["support-v4"]
+    compile rootProject.ext.dependencies["support-annotations"]
+    compile rootProject.ext.dependencies["cardview"]
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.google.code.gson:gson:2.8.0'
+    /* banner轮滚图 */
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    // 图片加载
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.robolectric:robolectric:3.1.4'
+    //    compile 'com.amap.api:3dmap:5.0.0'
+    compile 'com.amap.api:location:3.3.0'
+    compile 'com.amap.api:search:5.0.0'
+    compile 'com.amap.api:navi-3dmap:latest.integration'
+    //navi导航SDK 5.0.0以后版本包含了3D地图SDK，所以请不要同时引入map3d和navi SDK。
+    compile project(path: ':IjkPlayer')
+    compile files('libs/MobCommons-2018.0523.1925.jar')
+    compile files('libs/MobTools-2018.0523.1923.jar')
+    compile files('libs/ShareSDK-Core-3.2.0.jar')
+    compile files('libs/ShareSDK-QQ-3.2.0.jar')
+    compile files('libs/ShareSDK-QZone-3.2.0.jar')
+    compile files('libs/ShareSDK-Wechat-3.2.0.jar')
+    compile files('libs/ShareSDK-Wechat-Core-3.2.0.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-3.2.0.jar')
+}

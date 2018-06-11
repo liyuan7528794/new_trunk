@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_businessincome_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/income_icon_style"
+                android:drawableTop="@drawable/icon_money"
+                android:text="@string/businessincome_rmb" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                style="@style/text_red_36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="0" />
+
+            <View style="@style/line_B2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/text_9_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/businessincome_can_withdraw_cash" />
+
+                    <TextView
+                        android:id="@+id/tv_can_withdraw"
+                        style="@style/text_9_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="0元" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@color/gray_B2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/text_9_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/businessincome_this_month_withdraw" />
+
+                    <TextView
+                        android:id="@+id/tv_this_month_count"
+                        style="@style/text_9_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="0次" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/line_B2" />
+
+            <TextView
+                android:id="@+id/tv_withdraw_applicatin"
+                style="@style/one_button_style"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="90dp"
+                android:text="@string/businessincome_withdraw_application" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_question_business_income"
+            style="@style/text_9_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal|bottom"
+            android:text="@string/liveincome_question"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

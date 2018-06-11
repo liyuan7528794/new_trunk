@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="38dp"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:textSize="16dp"
+                android:textColor="@color/black_6C6F73"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="11"
+                android:gravity="center"
+                android:singleLine="true"
+                tools:text="25"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:textSize="10dp"
+                android:textColor="@color/red_FA7E7F"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:gravity="center"
+                android:singleLine="true"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:text="￥2000"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_start_lable"
+            style="@style/text_f_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="起"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_end_lable"
+            style="@style/text_f_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="2dp"
+            android:text="止"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

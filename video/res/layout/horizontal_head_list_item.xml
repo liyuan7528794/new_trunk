@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/head_item"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/nickname_item"
+        style="@style/text_f_8"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head_item"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"/>
+</RelativeLayout>

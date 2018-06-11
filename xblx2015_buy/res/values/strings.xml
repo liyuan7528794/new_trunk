@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="usercenter_live_income">我的红币</string>
+
+    <!-- 关于 -->
+    <string name="about_help">帮助</string>
+    <string name="about_feedback">意见反馈</string>
+    <string name="about_xblx">关于红了</string>
+    <string name="about_deal">用户协议</string>
+    <string name="about_new">新版本检测</string>
+    <string name="about_info">红了旅行 version </string>
+    <string name="feedback_think">请简要描述您的想法和意见</string>
+
+    <!-- 意见反馈 -->
+    <string name="feedback_success">您的意见已提交，感谢您对我们的关注</string>
+    <string name="feedback_content_cannot_empty">内容不能为空！</string>
+
+    <!-- 直播收入 -->
+    <string name="liveincome_details">明细</string>
+    <string name="liveincome_recharge">充值</string>
+    <string name="liveincome_withdraw_cash">提现</string>
+    <string name="liveincome_question">常见问题</string>
+
+    <!-- 红币充值 -->
+    <string name="recharge_red_recharge">红币充值</string>
+    <string name="recharge_alipay">支付宝</string>
+    <string name="recharge_exchange_explain">1元 = 10个红币，红币只能购买礼物，不可以直接提现</string>
+    <string name="red_moneybag">红钱袋</string>
+    <string name="sellect">收藏</string>
+
+    <!-- 电商收入 -->
+    <string name="businessincome_rmb">人民币</string>
+    <string name="businessincome_can_withdraw_cash">可提现金额</string>
+    <string name="businessincome_this_month_withdraw">本月可提现</string>
+    <string name="businessincome_withdraw_application">提现申请</string>
+
+    <!-- 我的众投 -->
+    <string name="myPublicVote">我的众投</string>
+    <string name="publicVoteManage">众投管理</string>
+
+
+    <!-- 提现申请 -->
+    <string name="withdraw_application">提现申请</string>
+    <string name="withdraw_cash">提现</string>
+    <string name="withdraw_cash_input">请输入您要提现金额</string>
+
+    <!-- 提现 -->
+    <string name="withdrawcash_redmoney">红币</string>
+    <string name="withdrawcash_can_exchange">可兑换</string>
+    <string name="withdrawcash_exchange_input">红币不足10枚，不可提现</string>
+    <string name="withdrawcash_exchange_display">可兑换0元</string>
+    <string name="withdrawcash_alipay">支付宝</string>
+    <string name="withdrawcash_alipay_input">请输入支付宝账号</string>
+    <string name="withdrawcash_name">姓名</string>
+    <string name="withdrawcash_name_input">请输入您的真实姓名</string>
+    <string name="withdrawcash_immediately">立即提现</string>
+    <string name="withdrawcash_account_not_empty">账号不能为空！</string>
+    <string name="withdrawcash_name_not_empty">姓名不能为空！</string>
+    <string name="withdrawcash_input_exchange_value">请输入要兑换的红币数</string>
+    <string name="withdrawcash_application_success">提现申请成功！</string>
+    <string name="orderManage">商家订单</string>
+
+    <string name="usercenter_business_income">资产管理</string>
+
+</resources>

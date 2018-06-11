@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <SurfaceView
+            android:id="@+id/sv_camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/focus_rect"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/transparent_1_ffc108"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/nav_icon_arrow_white" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            style="@style/text_f_16"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/circle2_black25"
+            android:text="00:00:00" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom">
+
+
+        <ImageView
+            android:id="@+id/iv_switch_camera"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/switch_camera" />
+
+        <ImageView
+            android:id="@+id/iv_start"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:src="@drawable/icon_recorder_start"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_go_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            android:src="@drawable/icon_go_publish" />
+
+        <RelativeLayout
+            android:id="@+id/fl_thumbnail_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp">
+
+            <com.travel.layout.SelectableRoundedImageView
+                android:id="@+id/iv_thumbnail"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32.5dp"
+                android:scaleType="centerCrop"
+                app:sriv_left_bottom_corner_radius="4dp"
+                app:sriv_left_top_corner_radius="4dp"
+                app:sriv_right_bottom_corner_radius="4dp"
+                app:sriv_right_top_corner_radius="4dp"
+                tools:background="@color/white" />
+            <!--tools:background="@drawable/bg_record_voice"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_thumbnail"
+                android:layout_marginTop="5dp"
+                android:text="导入视频"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

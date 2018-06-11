@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.travel.layout.SelectableRoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_big_city_story_img"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:sriv_left_bottom_corner_radius="8dp"
+        app:sriv_left_top_corner_radius="8dp"
+        app:sriv_right_bottom_corner_radius="8dp"
+        app:sriv_right_top_corner_radius="8dp" />
+
+    <TextView
+        android:id="@+id/tv_big_city_story_title"
+        style="@style/text_f_16"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp" />
+
+</FrameLayout>

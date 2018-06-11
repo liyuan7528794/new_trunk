@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ShopModel</string>
+    <string name="action_settings">Settings</string>
+    <!-- 通用 -->
+    <string name="refresh_fail">数据获取失败!</string>
+    <string name="net_fail">网络连接失败!</string>
+    <string name="manage_fail">操作失败!</string>
+    <string name="sure">确定</string>
+    <string name="attention_no">关注</string>
+    <string name="reload">重新加载</string>
+    <string name="again_reload">请再次加载</string>
+
+    <!-- AllEvaluateActivity查看所有评价 -->
+    <string name="allevaluate_evaluate">评价</string>
+    <!-- CommitOrderActivity提交订单 -->
+    <string name="commitorder_start_count">出行信息</string>
+    <string name="commitorder_total_price">总价</string>
+    <string name="commitorder_discount">平台优惠</string>
+    <string name="commitorder_payment">支付金额</string>
+    <string name="commitorder_remark_info">备注信息</string>
+    <string name="commitorder_commit_order">提交订单</string>
+    <string name="commitorder_cannot_saleself">商家不可购买自己的商品</string>
+    <string name="commitorder_name_input">请输入您的姓名</string>
+    <string name="commitorder_phone_input">请输入您的电话号码</string>
+    <string name="commitorder_phone_correct_input">请输入正确的电话号码</string>
+    <string name="commitorder_selected_notempty">请选择行程日期</string>
+    <string name="commitorder_single_demonstrate">单间数不能多于成人数</string>
+    <string name="commitorder_pay_method">支付方式</string>
+    <string name="commitorder_alipay">支付宝</string>
+    <string name="commitorder_wechatpay">微信</string>
+    <string name="commitorder_zhaohangpay">银行卡支付</string>
+    <string name="commitorder_actualpay">线下支付</string>
+    <string name="commitorder_single_explain">每个不想与他人同住时需要补齐的差价！</string>
+
+    <!-- EvaluateActivity评价编辑 -->
+    <string name="evaluate_input_evaluate">请输入您的评价</string>
+    <string name="evaluate_good">好评</string>
+    <string name="evaluate_middle">中评</string>
+    <string name="evaluate_bad">差评</string>
+    <string name="evaluate_description_match">描述相符</string>
+    <string name="evaluate_service_attitude">服务态度</string>
+    <string name="evaluate_report_evaluate">发表评价</string>
+    <string name="evaluate_max_count">最多上传4张图片</string>
+    <string name="evaluate_photo_fail">获取照片失败，请重试</string>
+    <string name="evaluate_cannot_empty">评价内容不能为空</string>
+    <string name="evaluate_delete_picture">确定删除此图片吗？</string>
+    <!-- GoodsInfoActivity商品详情 -->
+    <string name="goodsinfo_new_info">最新详情</string>
+    <string name="goodsinfo_undercarriage">此商品已下架</string>
+    <string name="goodsinfo_choose_service">选择客服</string>
+    <!-- MineHomeActivity个人主页 -->
+    <string name="minehome_private">私信</string>
+    <string name="minehome_my_page">我的主页</string>
+    <string name="minehome_page">的主页</string>
+    <string name="minehome_cancle_attention">您确定要取消对他的关注吗？</string>
+    <string name="minehome_not_cancle">不取消</string>
+    <string name="minehome_yes">是的</string>
+    <!-- OrderInfoActivity订单详情 -->
+    <string name="orderinfo_application_refund">申请退款</string>
+    <string name="orderinfo_refuse">拒绝</string>
+    <string name="orderinfo_accept">接受</string>
+    <string name="orderinfo_pay">支付</string>
+    <string name="orderinfo_pay_hltravel">支付到红了平台</string>
+    <string name="orderinfo_sure_pay">确认付款</string>
+    <string name="orderinfo_sure_refund">确认退款</string>
+    <string name="orderinfo_order_status">订单状态</string>
+    <string name="orderinfo_ing_wait_sure">待确认</string>
+    <string name="orderinfo_goods_num">产品编号</string>
+    <string name="orderinfo_order_num">订单号</string>
+    <string name="orderinfo_travel_info">旅程信息</string>
+    <string name="orderinfo_custom_service">客服</string>
+    <string name="orderinfo_buyer_info">买家信息</string>
+    <string name="orderinfo_order_path">订单流程</string>
+    <string name="orderinfo_evaluate_info">评价信息</string>
+    <string name="orderinfo_order_info">订单详情</string>
+    <string name="orderinfo_pay_success">买家支付成功</string>
+    <string name="orderinfo_pay_result_confirming">支付结果确认中</string>
+    <string name="orderinfo_pay_fail">支付失败</string>
+    <string name="orderinfo_refuse_reason_choose">请选择拒绝订单的理由</string>
+    <string name="orderinfo_sure_accept">确定同意此订单？</string>
+    <string name="orderinfo_pay_yes">确定付款吗？</string>
+    <string name="orderinfo_reason">理由</string>
+    <string name="orderinfo_input_sure_code">请输入确认码</string>
+    <string name="orderinfo_success">成功!</string>
+    <string name="orderinfo_accept_order">接受订单</string>
+    <string name="orderinfo_refuse_order">拒绝订单</string>
+    <string name="orderinfo_ing_wait_pay">待支付</string>
+    <string name="orderinfo_done_wait_evaluate">待评价</string>
+    <string name="orderinfo_done_evaluate">已评价</string>
+    <string name="orderinfo_service_date_remainder">距离服务日期还有</string>
+
+    <!-- 线路游订单详情 -->
+    <string name="orderinfo_application_unsubscribe">申请退订</string>
+    <string name="orderinfo_alter_remark">输入ERP单号</string>
+    <string name="orderinfo_application_public_invest">发起众投</string>
+    <string name="orderinfo_sure_unsubscribe">确认退订</string>
+    <string name="orderinfo_alter_price">修改价格</string>
+    <string name="orderinfo_ing_wait_start">待出行</string>
+    <string name="orderinfo_ing_unsubscribing">退订中</string>
+    <string name="orderinfo_ing_wait_sure_pay">待确认付款</string>
+    <string name="orderinfo_done_seller_refuse">商家拒绝</string>
+    <string name="orderinfo_done_buyer_unsubscribe">买家退订</string>
+    <string name="orderinfo_overtime_pay">超时未支付</string>
+    <string name="orderinfo_deduct_money">退款金额</string>
+    <string name="orderinfo_unsubscribe_reason_choose">请选择退订的理由</string>
+    <string name="orderinfo_refuse_reason_input">请输入理由</string>
+    <string name="orderinfo_deduct_money_explain">请根据退订政策扣除相应款项</string>
+    <string name="orderinfo_remain_day">游客退订时间距出行日期还有</string>
+    <string name="orderinfo_remain_day_not_empty">扣除金额不可为空</string>
+    <string name="orderinfo_discount_not_empty">优惠价不可为空</string>
+    <string name="orderinfo_refuse_reason_not_empty">理由不可为空</string>
+
+    <!-- ManageOrderActivity订单管理 -->
+    <string name="manageorder_doing">进行中</string>
+    <string name="manageorder_done">已完成</string>
+    <string name="manageorder_my_order">我的订单</string>
+    <string name="manageorder_order_manage">订单管理</string>
+    <!-- ManageFragment订单列表 -->
+    <string name="manage_no_order">暂无订单</string>
+    <string name="manage_no_finish_order">暂无已完成的订单</string>
+    <string name="manage_start_time">出发日期：</string>
+    <!-- OutFragment 出发首页 -->
+    <string name="out_start_place">出发地：</string>
+    <string name="out_destination">目的地：</string>
+
+    <!-- 申请众投 -->
+    <string name="application_public_reason_input">请简单描述此次发起众投的理由</string>
+    <string name="application_public_not_over_money">根据保险规定此行赔偿金额不得超过</string>
+    <string name="application_public_money_input">请输入赔付金额</string>
+
+</resources>

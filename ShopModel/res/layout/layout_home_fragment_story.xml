@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="25dp"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:layout_marginBottom="22dp">
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="197dp"
+            android:scaleType="centerCrop"/>
+        <com.travel.layout.CircularCoverView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cover_color="@android:color/white"
+            app:left_bottom_radius="5dp"
+            app:left_top_radius="5dp"
+            app:right_bottom_radius="5dp"
+            app:right_top_radius="5dp" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="42dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circle2_t_1_434b52"
+                android:gravity="center"
+                android:text="可预订"
+                android:textColor="#434b52"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_status"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#434b52"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/tv_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circle10_f8_left_blackground"
+                android:layout_marginLeft="15dp"
+                android:lines="1"
+                android:maxWidth="90dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingRight="2dp"
+                android:textSize="10dp"
+                android:textColor="@color/black_373F47"
+                android:text="故事产品体验"/>
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_lable"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#434b52"
+                android:textSize="13dp"
+                android:text="内容"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

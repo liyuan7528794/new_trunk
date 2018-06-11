@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/live_finish_relayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_alpha60">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:padding="23dp"
+                android:src="@drawable/live_icon_close"/>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="82dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/liveCoverImg"
+                    android:layout_width="251dp"
+                    android:layout_height="251dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/liveTitle"
+                    style="@style/text_d_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="直播标题"/>
+
+                <View
+                    style="@style/line_D_60"
+                    android:layout_marginTop="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        style="@style/text_d_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="观众："/>
+
+                    <TextView
+                        android:id="@+id/liveTotalNum"
+                        style="@style/text_d_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView5"
+                        android:text="0"/>
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        style="@style/text_d_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/liveZanNum"
+                        android:text="点赞："/>
+
+                    <TextView
+                        android:id="@+id/liveZanNum"
+                        style="@style/text_d_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:text="0"/>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/line_D_60"
+                    android:layout_marginTop="10dp"/>
+                <!--===============================================-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/text_f75_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="时长："/>
+
+                    <TextView
+                        android:id="@+id/liveTime"
+                        style="@style/text_f75_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView3"
+                        android:text="00:00:00"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        style="@style/text_f75_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/liveBarrageNum"
+                        android:text="弹幕："/>
+
+                    <TextView
+                        android:id="@+id/liveBarrageNum"
+                        style="@style/text_f75_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:text="0"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/historyButton"
+                        android:layout_width="79dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/live_type_radio"
+                        android:clickable="false"
+                        android:text="回放"
+                        android:textColor="@color/white"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/shareButton"
+                        android:layout_width="79dp"
+                        android:layout_height="27dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/live_type_radio"
+                        android:text="分享"
+                        android:textColor="@color/white"/>
+
+                </RelativeLayout>
+                <!--===============================================-->
+                <Button
+                    android:id="@+id/closeLive"
+                    style="@style/text_f_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/circle5_970_point5_f"
+                    android:text="结束直播"/>
+
+                <TextView
+                    style="@style/text_d_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="39dp"
+                    android:text="分享至："/>
+
+                <LinearLayout
+                    android:id="@+id/shareLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/wechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="24.7dp"
+                        android:src="@drawable/share_icon_wechat_white"/>
+
+                    <ImageView
+                        android:id="@+id/wechatFavorite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="24.7dp"
+                        android:src="@drawable/share_icon_group_white"/>
+
+                    <ImageView
+                        android:id="@+id/qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="24.7dp"
+                        android:src="@drawable/share_icon_qq_white"/>
+
+                    <ImageView
+                        android:id="@+id/qZone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/share_icon_qzone_white"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

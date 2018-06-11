@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingBottom="18dp">
+
+    <View
+        android:id="@+id/v_line_city"
+        style="@style/line_EC"></View>
+
+    <com.travel.layout.SelectableRoundedImageView
+        android:layout_marginTop="20dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_out_goods_img1"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/v_line_city"
+        android:layout_marginLeft="30dp"
+        android:scaleType="centerCrop"
+        app:sriv_left_bottom_corner_radius="2dp"
+        app:sriv_left_top_corner_radius="2dp"
+        app:sriv_right_bottom_corner_radius="2dp"
+        app:sriv_right_top_corner_radius="2dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_line_city"
+        android:layout_alignTop="@+id/iv_out_goods_img1"
+        android:layout_toLeftOf="@+id/iv_out_goods_img1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_out_goods_title1"
+            android:textSize="18dp"
+            android:textColor="@color/black_373F47"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:lines="1"/>
+
+        <TextView
+            android:id="@+id/tv_out_goods_content1"
+            android:textSize="13dp"
+            android:textColor="@color/black_6C6F73"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxLines="4"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_evidence_add_layout"
+    android:layout_below="@+id/lv_evidence"
+    android:orientation="horizontal"
+    android:gravity="center_vertical|right"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_evidence_upload"
+        android:text="证据上传"
+        style="@style/vote_upload_file_pk_red"
+        />
+    <View
+        android:id="@+id/line_second"
+        android:visibility="gone"
+        android:background="@color/red_FF2942"
+        android:layout_width="30dp"
+        android:layout_height="@dimen/vote_line_width"/>
+    <TextView
+        android:id="@+id/tv_start_live"
+        android:text="开始直播"
+        android:visibility="gone"
+        style="@style/vote_upload_file_pk_red"
+        />
+
+    <View
+        android:layout_gravity="center_vertical"
+        android:background="@color/red_FF2942"
+        android:layout_width="30dp"
+        android:layout_height="@dimen/vote_line_width" />
+
+    <FrameLayout
+        android:layout_width="@dimen/list_item_vote_circle_diameter"
+        android:layout_marginRight="@dimen/vote_up_file_margin"
+        android:layout_height="85dp">
+        <View
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/oval_red"
+            android:layout_width="@dimen/list_item_vote_circle_diameter"
+            android:layout_height="@dimen/list_item_vote_circle_diameter" />
+        <View
+            android:background="@color/red_FF2942"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/vote_line_width"
+            android:layout_height="43dp"/>
+    </FrameLayout>
+</LinearLayout>

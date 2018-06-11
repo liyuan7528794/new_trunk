@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    
+    sourceSets{
+    	main{
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs=['src']
+            resources.srcDirs=['src']
+            aidl.srcDirs=['src']
+            renderscript.srcDirs=['src']
+            res.srcDirs=['res']
+            assets.srcDirs=['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile project(':library')
+    compile project(':IjkPlayer')
+    compile project(':tencentav')
+    compile project(':Communication')
+    compile 'com.android.support:support-v4:23.1.0'
+    compile files('libs/core.jar')
+    compile files('libs/GifView.jar')
+    compile files('libs/hiksdk.jar')
+//    compile files('libs/AMap3DMap_3.3.2_AMapNavi_1.8.0_AMapSearch_3.3.0_AMapLocation_2.6.0_20160628.jar')
+
+}

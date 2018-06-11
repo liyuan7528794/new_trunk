@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.travel.shop"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="24"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application>
+        <activity
+            android:name=".activity.CityInfoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.GoodsInfoActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|layoutDirection"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.travel.shop.activity.GoodsInfoActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CouponChooseActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.ActivateCouponActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.SelectOrdersActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.GoodsActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.travel.shop.activity.GoodsActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="vnd.android.cursor.item/xxx">
+                </data>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.OrderActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.FilloutInfoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activity.EvaluationInfoActivity">
+        </activity>
+        <activity android:name=".activity.CCTVVideoActivity">
+        </activity>
+        <activity
+            android:name=".activity.CCTVVideoInfoActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|layoutDirection"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name=".activity.CCTVVideoLableActivity">
+        </activity>
+    </application>
+
+</manifest>

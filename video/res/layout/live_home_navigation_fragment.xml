@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_F5"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_livehome_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/nav_icon_arrow_day"
+            android:paddingLeft="7dp"
+            android:onClick="onBack" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/iv_back">
+
+            <LinearLayout
+                android:id="@+id/tab_newyear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_newyear"
+                    style="@style/live_tab_content"
+                    android:layout_gravity="center"
+                    android:text="跨年大趴" />
+
+                <View
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/newyearLine"
+                    android:layout_width="18dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:background="@drawable/circle8_333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_live"
+                    style="@style/live_tab_content"
+                    android:layout_gravity="center"
+                    android:text="城会玩" />
+
+                <View
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/liveLine"
+                    android:layout_width="18dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:background="@drawable/circle8_333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_about"
+                    style="@style/live_tab_content"
+                    android:layout_gravity="center"
+                    android:text="地图" />
+
+                <View
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/aboutLine"
+                    android:layout_width="18dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:background="@drawable/circle8_333" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_livehome_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_F5"></View>
+
+    <FrameLayout
+        android:id="@+id/fl_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

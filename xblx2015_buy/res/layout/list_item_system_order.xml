@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              tools:background="@color/gray_F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/circle4_f_point5_e6"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content"
+                style="@style/text_3_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginBottom="7.5dp"
+                tools:text="系统消息"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/text_6_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="您已经下单, 请及时支付"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cctv_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black_373F47"
+        android:textSize="16dp"/>
+
+    <com.travel.shop.widget.MyRecyclerView
+        android:id="@+id/mrv_cctv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp">
+    </com.travel.shop.widget.MyRecyclerView>
+
+    <View
+        android:id="@+id/v_line_cctv"
+        style="@style/line_EC"
+        android:layout_marginTop="17dp"></View>
+
+</LinearLayout>

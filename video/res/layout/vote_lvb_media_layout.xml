@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/vote_media_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/leftRe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/leftContain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/left_video_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+            <!--<com.tencent.rtmp.ui.TXCloudVideoView
+                android:id="@+id/left_video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>-->
+            <ImageView
+                android:id="@+id/left_close"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/inser_cut_close"/>
+
+            <ImageView
+                android:id="@+id/left_change_camera"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/left_close"
+                android:src="@drawable/live_point_change_carame"/>
+
+            <ImageView
+                android:id="@+id/left_full_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_full_screen"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/leftCoverRe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/leftCover"
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"/>
+
+                    <TextView
+                        android:id="@+id/leftName"
+                        style="@style/text_6_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="19dp"
+                        android:layout_marginTop="14dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/stroke_point5dp_e6"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:lines="1"
+                        android:text="买方·"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rightRe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rightContain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/right_video_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+            <!--<com.tencent.rtmp.ui.TXCloudVideoView
+                android:id="@+id/right_video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>-->
+            <ImageView
+                android:id="@+id/right_close"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/inser_cut_close"/>
+
+            <ImageView
+                android:id="@+id/right_change_camera"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/right_close"
+                android:src="@drawable/live_point_change_carame"/>
+
+            <ImageView
+                android:id="@+id/right_full_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_full_screen"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/rightCoverRe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/rightCover"
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"/>
+
+                    <TextView
+                        android:id="@+id/rightName"
+                        style="@style/text_6_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="19dp"
+                        android:layout_marginTop="14dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/stroke_point5dp_e6"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:lines="1"
+                        android:text="卖家·"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

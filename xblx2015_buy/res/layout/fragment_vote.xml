@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ptr="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/vote_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.travel.video.widget.VoteLVBMediaView
+            android:id="@+id/voteMediaView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_F5">
+
+            <LinearLayout
+                android:id="@+id/ll_title_layout"
+                android:layout_width="114dp"
+                android:layout_height="36dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="@dimen/vote_header_margin"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/tv_public_vote"
+                    style="@style/text_f_14"
+                    android:layout_width="57dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="众投"
+                    tools:background="@drawable/bg_tab_left_select"/>
+
+                <TextView
+                    android:id="@+id/tv_comments"
+                    style="@style/text_red_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="评论"
+                    tools:background="@drawable/bg_tab_right_non_select"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_pk_header_left"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="@dimen/vote_header_margin"
+                android:layout_marginTop="@dimen/vote_header_margin"
+                android:background="@drawable/oval_blue508cee"
+                android:padding="@dimen/vote_line_width"/>
+
+            <ImageView
+                android:id="@+id/iv_pk_header_right"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/vote_header_margin"
+                android:layout_marginTop="@dimen/vote_header_margin"
+                android:background="@drawable/oval_red"
+                android:padding="@dimen/vote_line_width"/>
+
+            <View
+                android:id="@+id/line_left_uperest"
+                android:layout_width="@dimen/vote_line_width"
+                android:layout_height="15dp"
+                android:layout_below="@+id/iv_pk_header_left"
+                android:layout_marginLeft="@dimen/vote_header_line_margin"
+                android:background="@color/blue_508CEE"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/line_right_uperest"
+                android:layout_width="@dimen/vote_line_width"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/iv_pk_header_right"
+                android:layout_marginRight="@dimen/vote_header_line_margin"
+                android:background="@color/red_FF2942"
+                android:visibility="gone"/>
+
+            <com.travel.widget.ListViewOverrideTouch
+                android:id="@+id/lv_evidence"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/iv_pk_header_left"
+                android:layout_marginLeft="@dimen/vote_header_margin"
+                android:layout_marginRight="@dimen/vote_header_margin"
+                android:scrollbars="none"
+                ptr:ptrAnimationStyle="flip"
+                ptr:ptrListViewExtrasEnabled="false"/>
+
+            <FrameLayout
+                android:id="@+id/fl_fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/iv_pk_header_left"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/include_comments"
+                    layout="@layout/fragment_public_vote_comments"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.travel.video.widget.VoteLVBFullScreenView
+        android:id="@+id/vote_full_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_audio_player_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:background="@android:color/white"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_speak"
+            style="@style/text_3_16"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="50dp"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            tools:text="外放模式"/>
+
+        <com.travel.localfile.ArcProgress
+            android:visibility="gone"
+            android:id="@+id/circle_progress"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            custom:arc_bottom_text="点击停止"
+            custom:arc_progress="0"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_audio_timer"
+            style="@style/text_f_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circle_progress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            tools:text="00:30:30 / 00:59:46"/>
+
+        <com.travel.localfile.VisualizerView
+            android:id="@+id/visualizer_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/close_voice"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_close_black"/>
+
+        <com.travel.localfile.PlayerProgressControl
+            android:id="@+id/progressControler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@android:color/black">
+
+        <ImageView
+            android:id="@+id/iv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/nav_icon_arrow_white"/>
+
+        <TextView
+            android:id="@+id/tv_page"
+            style="@style/text_f_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/iv_title_left"
+            android:gravity="center"
+            tools:text="左边的标题"/>
+
+        <TextView
+            android:id="@+id/tv_title_right"
+            style="@style/text_f_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="删除"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_delete"
+            style="@style/text_f_20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="删除"
+            android:visibility="invisible"/>
+
+        <ToggleButton
+            android:id="@+id/cb_select"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/check_box"
+            android:button="@null"
+            android:textOff=""
+            android:textOn=""
+            tools:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_select"
+            style="@style/text_f_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="select"
+            tools:visibility="visible"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_empty_view"
+        style="@style/text_9_16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="列表中已经没有数据了"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+</RelativeLayout>

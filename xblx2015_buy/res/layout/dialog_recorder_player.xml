@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="300dp"
+              android:layout_height="145dp"
+              android:orientation="vertical"
+              tools:background="@android:color/holo_purple">
+
+    <FrameLayout
+        android:id="@+id/fl_recorder_up"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        tools:background="@android:color/darker_gray">
+
+        <ImageView
+            android:id="@+id/iv_header_img"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:background="@drawable/oval_f50"
+            android:padding="3dp"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_gravity="right|top"
+            android:padding="10dp"
+            android:src="@drawable/icon_close"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/circlebottem10_f"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_play_stop"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_recorder_pause"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="230dp"
+            android:layout_height="8dp"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_drawable_recorder_dialog"/>
+
+        <TextView
+            android:id="@+id/tv_timer"
+            style="@style/text_6_10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            tools:text="12:30"/>
+    </LinearLayout>
+</LinearLayout>

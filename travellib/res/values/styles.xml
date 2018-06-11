@@ -1,0 +1,915 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- 字的样式 -->
+    <style name="text_3_10">
+        <item name="android:textColor">@color/black_3</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="text_3_11">
+        <item name="android:textColor">@color/black_3</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+
+    <style name="text_3_12">
+        <item name="android:textColor">@color/black_3</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="text_3_13">
+        <item name="android:textColor">@color/black_3</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="text_3_14">
+        <item name="android:textColor">@color/black_3</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="text_3_15">
+        <item name="android:textColor">@color/black_3</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="text_3_16">
+        <item name="android:textColor">@color/black_3</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="text_3_17">
+        <item name="android:textColor">@color/black_3</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="text_3_18">
+        <item name="android:textColor">@color/black_3</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="text_3_20">
+        <item name="android:textColor">@color/black_3</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="text_3_25">
+        <item name="android:textColor">@color/black_3</item>
+        <item name="android:textSize">25dp</item>
+    </style>
+
+    <style name="text_4_12">
+        <item name="android:textColor">@color/black_4</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="text_4_14">
+        <item name="android:textColor">@color/black_4</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="text_4_15">
+        <item name="android:textColor">@color/black_4</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="text_4_16">
+        <item name="android:textColor">@color/black_4</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="text_5_10">
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="text_5_13">
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="text_5_16">
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="text_5_18">
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="text_5_20">
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="text_6_8">
+        <item name="android:textColor">@color/black_6</item>
+        <item name="android:textSize">8dp</item>
+    </style>
+
+    <style name="text_6_9">
+        <item name="android:textColor">@color/black_6</item>
+        <item name="android:textSize">9dp</item>
+    </style>
+
+    <style name="text_6_10">
+        <item name="android:textColor">@color/black_6</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="text_6_11">
+        <item name="android:textColor">@color/black_6</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+
+    <style name="text_6_12">
+        <item name="android:textColor">@color/black_6</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="text_6_14">
+        <item name="android:textColor">@color/black_6</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="text_6_16">
+        <item name="android:textColor">@color/black_6</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="text_6_18">
+        <item name="android:textColor">@color/black_6</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="text_blue_12">
+        <item name="android:textColor">@color/blue_508CEE</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="text_blue_14">
+        <item name="android:textColor">@color/blue_508CEE</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="text_blue_15">
+        <item name="android:textColor">@color/blue_508CEE</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="text_blue_16">
+        <item name="android:textColor">@color/blue_508CEE</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="text_blue75AAFF_36">
+        <item name="android:textColor">@color/blue_75AAFF</item>
+        <item name="android:textSize">36dp</item>
+    </style>
+
+    <style name="text_8_11">
+        <item name="android:textColor">@color/gray_8</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+
+    <style name="text_8_16">
+        <item name="android:textColor">@color/gray_8</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="text_9_10">
+        <item name="android:textColor">@color/gray_9</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="text_9_11">
+        <item name="android:textColor">@color/gray_9</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+
+    <style name="text_9_12">
+        <item name="android:textColor">@color/gray_9</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="text_9_13">
+        <item name="android:textColor">@color/gray_9</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="text_9_14">
+        <item name="android:textColor">@color/gray_9</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="text_9_15">
+        <item name="android:textColor">@color/gray_9</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="text_9_16">
+        <item name="android:textColor">@color/gray_9</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="text_A1_14">
+        <item name="android:textColor">@color/gray_A1</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="text_A5_10">
+        <item name="android:textColor">@color/gray_A5</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="text_B3B2B7_14">
+        <item name="android:textColor">@color/gray_B3B2B7</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="text_B_13">
+        <item name="android:textColor">@color/gray_B</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="text_C0_14">
+        <item name="android:textColor">@color/gray_C0</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="text_d_12">
+        <item name="android:textColor">@color/gray_D</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="text_d_14">
+        <item name="android:textColor">@color/gray_D</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="text_d_16">
+        <item name="android:textColor">@color/gray_D</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="text_d87_12">
+        <item name="android:textColor">@color/gray_D_alpha87</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="text_d87_15">
+        <item name="android:textColor">@color/gray_D_alpha87</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="text_yellow_F1E600_11">
+        <item name="android:textColor">@color/yellow_F1E600</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+
+    <style name="text_yellow_F1E600_12">
+        <item name="android:textColor">@color/yellow_F1E600</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="text_red_12">
+        <item name="android:textColor">@color/red_EC6262</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="text_red_FB7575_12">
+        <item name="android:textColor">@color/red_FB7575</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="text_red_FB7575_14">
+        <item name="android:textColor">@color/red_FB7575</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="text_red_14">
+        <item name="android:textColor">@color/red_EC6262</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="text_red_15">
+        <item name="android:textColor">@color/red_EC6262</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="text_red_16">
+        <item name="android:textColor">@color/red_EC6262</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="text_red_17">
+        <item name="android:textColor">@color/red_EC6262</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="text_red_18">
+        <item name="android:textColor">@color/red_EC6262</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="text_red_36">
+        <item name="android:textColor">@color/red_EC6262</item>
+        <item name="android:textSize">36dp</item>
+    </style>
+
+    <style name="text_redFF7A89_36">
+        <item name="android:textColor">@color/red_FF7A89</item>
+        <item name="android:textSize">36dp</item>
+    </style>
+
+    <style name="text_redFA7E7F_14">
+        <item name="android:textColor">@color/red_FA7E7F</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="text_redFA7E7F_16">
+        <item name="android:textColor">@color/red_FA7E7F</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="text_f2_10">
+        <item name="android:textColor">@color/gray_F2</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="text_f_8">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">8dp</item>
+    </style>
+
+    <style name="text_f_10">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="text_f_11">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+
+    <style name="text_f_12">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="text_f_13">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="text_f_14">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="text_f_15">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="text_f_16">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="text_f_17">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="text_f_18">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="text_f_20">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="text_f_26">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">26dp</item>
+    </style>
+
+    <style name="text_f_28">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">28dp</item>
+    </style>
+
+    <style name="text_f75_14">
+        <item name="android:textColor">@color/white_alpha75</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="text_f50_10">
+        <item name="android:textColor">@color/white_alpha50</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="text_f87_18">
+        <item name="android:textColor">@color/white_alpha87</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+    <!-- 线的样式 -->
+    <style name="line_3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/black_3</item>
+    </style>
+
+    <style name="line_9">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_9</item>
+    </style>
+
+    <style name="line_wpoint5_9">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/gray_9</item>
+    </style>
+
+    <style name="line_B2_50">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_B2_alpha50</item>
+    </style>
+
+    <style name="line_B2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_B2</item>
+    </style>
+
+    <style name="line_D1D2D2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_D1D2D2</item>
+    </style>
+
+    <style name="line_D8">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_D8</item>
+    </style>
+
+    <style name="line_D">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_D</item>
+    </style>
+
+    <style name="line_D_60">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_D_alpha60</item>
+    </style>
+
+    <style name="line_E5">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_E5</item>
+    </style>
+
+    <style name="line_E5_9">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">9dp</item>
+        <item name="android:background">@color/gray_E5</item>
+    </style>
+
+    <style name="line_E6">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_E6</item>
+    </style>
+
+    <style name="line_E8">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gray_E8</item>
+    </style>
+
+    <style name="line_E8E9EB">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gray_E8E9EB</item>
+    </style>
+
+    <style name="line_E8E9EB_left" parent="line_E8E9EB">
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+
+    <style name="line_EC">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_EC</item>
+    </style>
+
+    <style name="line_ED">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_ED</item>
+    </style>
+
+    <style name="line_F5_15">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:background">@color/gray_F5</item>
+    </style>
+
+    <style name="line_F2F3F4">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_ED</item>
+    </style>
+
+    <style name="line_F2F3F4_margin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray_ED</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="line_f">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="line_f8">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gray_F8</item>
+    </style>
+
+    <style name="goods_layout_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/black_6C6F73</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="goods_layout_selectable">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="discover_layout_selectable">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+    <!-- dialog样式  -->
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+
+    <!-- 底部弹窗动画 -->
+    <style name="BelowPupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    <!-- 我的页面的右箭头 -->
+    <style name="my_icon_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/icon_my_arrow</item>
+    </style>
+    <!-- 我的页面的分栏的布局 -->
+    <style name="my_column_layout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- 我的页面的分栏的内容 -->
+    <style name="my_column_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/black_3</item>
+    </style>
+    <!-- 我的页面的列表布局 -->
+    <style name="my_list_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+    <!-- 我的页面的列表内容 -->
+    <style name="my_list_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/black_3</item>
+    </style>
+
+    <!-- 视频列表主页tab的字体颜色 -->
+    <style name="live_tab_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/black_3</item>
+    </style>
+
+    <!-- 设置页面的列表布局 -->
+    <style name="my_setting_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- 一个按钮的样式 -->
+    <style name="one_button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/black_3</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- 两个按钮——左边的样式 -->
+    <style name="two_button_left_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/black_3</item>
+    </style>
+    <!-- 两个按钮——右边的样式 -->
+    <style name="two_button_right_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/black_3</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- 信息填写页中联系人的展示部分 -->
+    <style name="fill_out_contact_show">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/black_6C6F73</item>
+    </style>
+    <!-- 信息填写页中联系人的编辑部分 -->
+    <style name="fill_out_contact_edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/black_48494C</item>
+    </style>
+    <!--<item name="android:cursorVisible">true</item>-->
+    <!-- 分享图标 -->
+    <style name="share_icon" parent="text_6_12">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:drawableTop">@drawable/logo_wechatmoments</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DayTheme" parent="android:style/Theme.NoTitleBar">
+        <!--  背景色 -->
+        <item name="titleBackgroud">@color/white_alpha88</item>
+        <item name="pictureCoverBackgroud">@color/transparent</item>
+        <item name="tabBarBackgroud">@color/white</item>
+        <item name="cityProductListBackgroud">@color/white_alpha88</item>
+        <item name="contentBackgroud">@color/gray_F5</item>
+        <item name="whiteF9Background">@color/white_F9</item>
+        <item name="consultBackground">@color/white</item>
+        <item name="commitBackground">@color/black_3</item>
+        <item name="chatInputBackground">@color/gray_ED</item>
+        <item name="oneButtonBackground">@color/black_3</item>
+        <item name="chatDateBackground">@color/gray_D</item>
+        <item name="calendarWeekBackground">@color/gray_F2</item>
+        <item name="cityBackground">@color/white_alpha50</item>
+        <!-- 线条颜色 -->
+        <item name="homeLineColor">@color/gray_D</item>
+        <item name="homeFatLineColor">@color/gray_F5</item>
+        <item name="homeModuleLineColor">@color/gray_F5</item>
+        <item name="homeProductLineColor">@color/gray_EC</item>
+        <item name="myPhotoLineColor">@color/gray_E6</item>
+        <item name="myOtherLineColor">@color/gray_E8E9EB</item>
+        <item name="tryStrokeLineColor">@color/black_3</item>
+        <item name="cityWeatherLineColor">@color/white</item>
+        <item name="loginLineColor">@color/gray_93</item>
+        <item name="gray9LineColor">@color/gray_9</item>
+        <item name="grayB2alpha50LineColor">@color/gray_B2_alpha50</item>
+        <item name="grayB2LineColor">@color/gray_B2</item>
+        <item name="grayD1D2D2LineColor">@color/gray_D1D2D2</item>
+        <item name="grayD8LineColor">@color/gray_D8</item>
+        <item name="grayDalpha60LineColor">@color/gray_D_alpha60</item>
+        <item name="grayE5LineColor">@color/gray_E5</item>
+        <item name="grayEDLineColor">@color/gray_ED</item>
+        <item name="whiteLineColor">@color/white</item>
+        <item name="grayE6LineColor">@color/gray_E6</item>
+        <item name="grayF0LineColor">@color/gray_F0</item>
+        <item name="gray97LineColor">@color/gray_97</item>
+        <item name="citiesItemCardStrokeColor">@color/gray_E</item>
+        <item name="grayF8LineColor">@color/gray_F8</item>
+        <item name="grayE8LineColor">@color/gray_E8</item>
+        <!-- 图标 -->
+        <item name="themeIcon">@drawable/icon_day</item>
+        <item name="messageIcon">@drawable/icon_day_message</item>
+        <item name="homeCheckedIcon">@drawable/main_tab_live_checked_day</item>
+        <item name="homeUncheckedIcon">@drawable/main_tab_live_unchecked_day</item>
+        <item name="cityCheckedIcon">@drawable/main_tab_city_checked_day</item>
+        <item name="cityUncheckedIcon">@drawable/main_tab_city_unchecked_day</item>
+        <item name="myCheckedIcon">@drawable/main_tab_usercenter_checked_day</item>
+        <item name="myUncheckedIcon">@drawable/main_tab_usercenter_unchecked_day</item>
+        <item name="bookIcon">@drawable/icon_book_day</item>
+        <item name="productIcon">@drawable/icon_product_day</item>
+        <item name="homeCCTV9Icon">@drawable/icon_home_cctv_day</item>
+        <item name="backIcon">@drawable/nav_icon_arrow_day</item>
+        <item name="shareIcon">@drawable/icon_story_share_day</item>
+        <item name="collectedIcon">@drawable/icon_story_collect_yes_day</item>
+        <item name="uncollectIcon">@drawable/icon_story_collect_no_day</item>
+        <item name="commentIcon">@drawable/icon_story_comment_day</item>
+        <item name="groupChatIcon">@drawable/icon_group_chat_day</item>
+        <item name="addVoteIcon">@drawable/icon_add_day</item>
+        <!-- 图片 -->
+        <item name="votePicture">@drawable/bg_vote_day</item>
+        <item name="videoPicture">@drawable/bg_video_day</item>
+        <item name="addVotePicture">@drawable/vote_btn_add_day</item>
+        <item name="chatLeftPicture">@drawable/chat_text_left_bg_day</item>
+        <item name="voteLeftPicture">@drawable/vote_left_bg_day</item>
+        <item name="voteRightPicture">@drawable/vote_right_bg_day</item>
+        <!-- 文字颜色 -->
+        <item name="titleColor">@color/black_373F47</item>
+        <item name="moduleTitleColor">@color/black_383F4F</item>
+        <item name="productTitleColor">@color/black_373F47</item>
+        <item name="productContentColor">@color/black_6C6F73</item>
+        <item name="citySubheadColor">@color/gray_868A8F</item>
+        <item name="myColor">@color/black_3</item>
+        <item name="myIdColor">@color/gray_A5</item>
+        <item name="goodsInfoCheckedColor">@color/black_3</item>
+        <item name="tryColor">@color/white</item>
+        <item name="storyIntroColor">@color/black_4</item>
+        <item name="cityWeatherColor">@color/gray_97</item>
+        <item name="cityReadColor">@color/gray_BDC0C4</item>
+        <item name="loginOtherColor">@color/black_6</item>
+        <item name="voteNameColor">@color/gray_9</item>
+        <item name="liveShareColor">@color/gray_D</item>
+        <item name="landLiveShareColor">@color/gray_D_alpha87</item>
+        <item name="whiteWordColor">@color/white</item>
+        <item name="likeNumColor">@color/white_alpha75</item>
+        <item name="liveOverColor">@color/white_alpha87</item>
+        <item name="consultColor">@color/black_3</item>
+        <item name="commitColor">@color/white</item>
+    </style>
+
+    <style name="NightTheme" parent="android:style/Theme.NoTitleBar">
+        <!--  背景色 -->
+        <item name="titleBackgroud">@color/black_3_alpha88</item>
+        <item name="pictureCoverBackgroud">@color/black_alpha35</item>
+        <item name="tabBarBackgroud">@color/black_3</item>
+        <item name="cityProductListBackgroud">@color/black_2_alpha88</item>
+        <item name="contentBackgroud">@color/black_2</item>
+        <item name="whiteF9Background">@color/black_3</item>
+        <item name="consultBackground">@color/gray_D8</item>
+        <item name="commitBackground">@android:color/white</item>
+        <item name="chatInputBackground">@color/black_2</item>
+        <item name="oneButtonBackground">@color/gray_D8</item>
+        <item name="chatDateBackground">@color/black_3</item>
+        <item name="calendarWeekBackground">@color/black_3</item>
+        <item name="cityBackground">@color/black_alpha75</item>
+        <!-- 线条颜色 -->
+        <item name="homeLineColor">@color/black_2F</item>
+        <item name="homeFatLineColor">@color/black_2</item>
+        <item name="homeModuleLineColor">@color/black_2F</item>
+        <item name="homeProductLineColor">@color/black_2F</item>
+        <item name="myPhotoLineColor">@color/black_2F</item>
+        <item name="myOtherLineColor">@color/black_2F</item>
+        <item name="tryStrokeLineColor">@color/gray_8C</item>
+        <item name="cityWeatherLineColor">@color/black_20</item>
+        <item name="loginLineColor">@color/black_2F</item>
+        <item name="gray9LineColor">@color/black_2F</item>
+        <item name="grayB2alpha50LineColor">@color/black_2F</item>
+        <item name="grayB2LineColor">@color/black_2F</item>
+        <item name="grayD1D2D2LineColor">@color/black_2F</item>
+        <item name="grayD8LineColor">@color/black_2F</item>
+        <item name="grayDalpha60LineColor">@color/black_2F</item>
+        <item name="grayE5LineColor">@color/black_2F</item>
+        <item name="grayEDLineColor">@color/black_2F</item>
+        <item name="whiteLineColor">@color/black_2F</item>
+        <item name="grayE6LineColor">@color/gray_C0</item>
+        <item name="grayF0LineColor">@color/black_2F</item>
+        <item name="gray97LineColor">@color/black_2F</item>
+        <item name="citiesItemCardStrokeColor">@color/black_2F</item>
+        <item name="grayF8LineColor">@color/black_2F</item>
+        <item name="grayE8LineColor">@color/black_2F</item>
+        <!-- 图标 -->
+        <item name="themeIcon">@drawable/icon_night</item>
+        <item name="messageIcon">@drawable/icon_night_message</item>
+        <item name="homeCheckedIcon">@drawable/main_tab_live_checked_day</item>
+        <item name="homeUncheckedIcon">@drawable/main_tab_live_unchecked_day</item>
+        <item name="cityCheckedIcon">@drawable/main_tab_city_checked_day</item>
+        <item name="cityUncheckedIcon">@drawable/main_tab_city_unchecked_day</item>
+        <item name="myCheckedIcon">@drawable/main_tab_usercenter_checked_day</item>
+        <item name="myUncheckedIcon">@drawable/main_tab_usercenter_unchecked_day</item>
+        <item name="bookIcon">@drawable/icon_book_night</item>
+        <item name="productIcon">@drawable/icon_product_night</item>
+        <item name="homeCCTV9Icon">@drawable/icon_home_cctv_night</item>
+        <item name="backIcon">@drawable/nav_icon_arrow_night</item>
+        <item name="shareIcon">@drawable/icon_story_share_night</item>
+        <item name="collectedIcon">@drawable/icon_story_collect_yes_night</item>
+        <item name="uncollectIcon">@drawable/icon_story_collect_no_night</item>
+        <item name="commentIcon">@drawable/icon_story_comment_night</item>
+        <item name="groupChatIcon">@drawable/icon_group_chat_night</item>
+        <item name="addVoteIcon">@drawable/icon_add_night</item>
+        <!-- 图片 -->
+        <item name="votePicture">@drawable/bg_vote_night</item>
+        <item name="videoPicture">@drawable/bg_video_night</item>
+        <item name="addVotePicture">@drawable/vote_btn_add_night</item>
+        <item name="chatLeftPicture">@drawable/chat_text_left_bg_night</item>
+        <item name="voteLeftPicture">@drawable/vote_left_bg_night</item>
+        <item name="voteRightPicture">@drawable/vote_right_bg_night</item>
+        <!-- 文字颜色 -->
+        <item name="titleColor">@android:color/white</item>
+        <item name="moduleTitleColor">@color/gray_C0</item>
+        <item name="productTitleColor">@color/gray_C0</item>
+        <item name="productContentColor">@color/gray_C0</item>
+        <item name="myColor">@color/gray_C0</item>
+        <item name="myIdColor">@color/gray_A5</item>
+        <item name="goodsInfoCheckedColor">@android:color/white</item>
+        <item name="tryColor">@color/gray_8C</item>
+        <item name="storyIntroColor">@color/gray_C0</item>
+        <item name="cityWeatherColor">@color/gray_C0</item>
+        <item name="cityReadColor">@color/gray_BDC0C4</item>
+        <item name="loginOtherColor">@color/gray_C0</item>
+        <item name="voteNameColor">@color/gray_C0</item>
+        <item name="liveShareColor">@color/gray_C0</item>
+        <item name="landLiveShareColor">@color/gray_C0</item>
+        <item name="whiteWordColor">@color/gray_C0</item>
+        <item name="likeNumColor">@color/gray_C0</item>
+        <item name="liveOverColor">@color/gray_C0</item>
+        <item name="consultColor">@color/black_3F</item>
+        <item name="commitColor">@color/black_3</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/white_alpha88</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+</resources>

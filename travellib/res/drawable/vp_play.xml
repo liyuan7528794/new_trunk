@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>     
+<selector xmlns:android="http://schemas.android.com/apk/res/android">     
+    <item android:state_pressed="false" android:drawable="@drawable/vp_play_out" />
+    <item android:state_pressed="true" android:drawable="@drawable/vp_play_point" />
+    <item android:drawable="@drawable/vp_play_out" />
+</selector>

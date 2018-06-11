@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_pop_pay"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/transparent"
+              android:orientation="vertical"
+              android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/circle6_f"
+        android:orientation="vertical"
+        android:paddingBottom="18dp">
+
+        <TextView
+            android:id="@+id/tv_pay_method_title"
+            style="@style/text_6_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="选择付款方式"/>
+
+        <RadioGroup
+            android:id="@+id/rg_pay_method"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="21.4dp"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/rb_wechatpay"
+                style="@style/text_3_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16.5dp"
+                android:layout_marginLeft="15dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/pay_icon_wechat"
+                android:drawablePadding="16.5dp"
+                android:gravity="center_vertical"
+                android:text="@string/commitorder_wechatpay"/>
+
+            <View style="@style/line_E8E9EB"></View>
+
+            <RadioButton
+                android:id="@+id/rb_alipay"
+                style="@style/text_3_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/pay_icon_alipay"
+                android:drawablePadding="15dp"
+                android:text="@string/commitorder_alipay"/>
+
+            <View style="@style/line_E8E9EB"></View>
+
+            <RadioButton
+                android:id="@+id/rb_zhaohangpay"
+                style="@style/text_3_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/pay_icon_card"
+                android:drawablePadding="15dp"
+                android:text="@string/commitorder_zhaohangpay"
+                android:visibility="visible"/>
+
+
+            <RadioButton
+                android:id="@+id/rb_actualpay"
+                style="@style/text_3_16"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/icon_actual"
+                android:drawablePadding="16.5dp"
+                android:text="@string/commitorder_actualpay"
+                android:visibility="gone"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_pay_cancel"
+        style="@style/text_3_16"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle6_f"
+        android:gravity="center"
+        android:text="@string/cancel"/>
+
+</LinearLayout>

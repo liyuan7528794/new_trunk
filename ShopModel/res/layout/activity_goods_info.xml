@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_data_get"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_goods_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_alpha88"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_alpha88"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:paddingLeft="7dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nav_icon_arrow_day"
+                        android:onClick="onBack" />
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/hs_tabs_control"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textColor="@color/black_3"
+                                android:textSize="16dp" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:id="@+id/iv_content"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icon_home_cctv_day" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_product"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="央视纪录片"
+                                android:textColor="@color/gray_9"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <!-- 下划线 -->
+                        <LinearLayout
+                            android:id="@+id/ll_control_line"
+                            android:layout_width="wrap_content"
+                            android:layout_height="3dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="3dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/circle8_333" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/iv_story_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/layout_video"
+                layout="@layout/adapter_listview_layout"
+                android:visibility="gone"></include>
+
+            <com.mylhyl.crlayout.SwipeRefreshRecyclerView xmlns:crl="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/srrv_goods_info"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:listSelector="@android:color/transparent"
+                crl:load_animator="true" />
+
+            <RelativeLayout
+                android:id="@+id/rl_story_info"
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <View style="@style/line_EC" />
+
+                <TextView
+                    android:id="@+id/tv_story_try"
+                    android:layout_width="148dp"
+                    android:layout_height="33dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="19dp"
+                    android:background="@drawable/circle33_fa7e7f"
+                    android:gravity="center"
+                    android:text="央视同款"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/iv_story_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="17dp"
+                    android:layout_toLeftOf="@+id/tv_story_try" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="1dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="17dp"
+                    android:layout_toLeftOf="@+id/iv_story_collect"
+                    android:background="@color/gray_ED" />
+
+                <ImageView
+                    android:id="@+id/iv_story_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="17dp"
+                    android:layout_toLeftOf="@+id/view1"
+                    android:src="@drawable/icon_story_comment_day" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/full_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/video_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_3"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/video_contain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:src="@drawable/live_point_close"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/none_story"
+        style="@style/text_3_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="此故事未发布"
+        android:visibility="gone" />
+</FrameLayout>

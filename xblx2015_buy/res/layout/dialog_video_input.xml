@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        tools:background="@android:color/white"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <com.travel.communication.view.PressProgressButton
+            android:id="@+id/btn_record"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="56dp"
+            android:layout_centerHorizontal="true"/>
+        <ImageButton
+            android:id="@+id/ib_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="56dp"
+            android:layout_marginLeft="40dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:background="@drawable/video_icon_back" />
+        <ImageButton
+            android:id="@+id/ib_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="56dp"
+            android:layout_marginRight="40dp"
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:background="@drawable/video_icon_confirm" />
+    </RelativeLayout>
+</RelativeLayout>

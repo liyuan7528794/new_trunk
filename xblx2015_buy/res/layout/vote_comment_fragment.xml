@@ -1,0 +1,85 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:crl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_F5">
+
+    <RelativeLayout
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <View style="@style/line_D8"></View>
+
+        <LinearLayout
+            android:id="@+id/ll_comment_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_comment_edit"
+                    style="@style/text_3_14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入评论内容"
+                    android:maxLines="3"
+                    android:textColorHint="@color/gray_C0"/>
+
+                <TextView
+                    android:id="@+id/tv_comment_send"
+                    style="@style/text_blue_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="发送"/>
+            </LinearLayout>
+
+            <View style="@style/line_D8"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_write"
+            style="@style/text_3_16"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="写评论"/>
+    </RelativeLayout>
+
+    <com.mylhyl.crlayout.SwipeRefreshRecyclerView
+        android:id="@+id/srRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/re"
+        android:listSelector="@android:color/transparent"
+        crl:load_animator="true">
+    </com.mylhyl.crlayout.SwipeRefreshRecyclerView>
+    <TextView
+        android:id="@+id/none_notify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/none_notify"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:gravity="center"
+        style="@style/text_9_16"
+        android:text="当前没有任何评论，快来占沙发吧！"/>
+</RelativeLayout>

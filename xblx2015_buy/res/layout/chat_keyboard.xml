@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/message_tool_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View style="@style/line_D1D2D2"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/toolbox_cb_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/chat_key_board_sound_and_keyboard"
+                android:button="@null"/>
+
+            <FrameLayout
+                android:id="@+id/fl_emojicon_void"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:maxHeight="60dp"
+                android:minHeight="40dp">
+
+                <LinearLayout
+                    android:id="@+id/toolbox_et_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <com.rockerhieu.emojicon.EmojiconEditText
+                        android:id="@+id/toolbox_et_message"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:textColor="@color/black_373F47"
+                        android:background="@drawable/selector_edit_text_bg"
+                        android:singleLine="false"
+                        android:textSize="18dp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/toolbox_btn_voice"
+                    style="@style/text_3_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/btn_auto_record_bg"
+                    android:text="按住 说话"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+            </FrameLayout>
+
+            <CheckBox
+                android:id="@+id/toolbox_cb_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/chat_key_board_smile"
+                android:button="@null"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp">
+
+                <CheckBox
+                    android:id="@+id/toolbox_cb_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/selector_chat_more"
+                    android:button="@null"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+
+                <Button
+                    android:id="@+id/toolbox_btn_send"
+                    style="@style/text_blue_16"
+                    android:layout_width="53dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/white"
+                    android:text="发送"
+                    android:visibility="visible"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <View style="@style/line_D1D2D2"></View>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/toolbox_layout_face"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:translationZ="-2dp"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/fl_chat_keyboard_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tootbox_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

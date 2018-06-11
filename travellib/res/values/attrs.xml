@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+    
+    <declare-styleable name="icon_indicator">
+        <attr name="non_select_drawable" format="reference" />
+        <attr name="select_drawable" format="reference" />
+        <attr name="icon_radius" format="dimension" />
+        <attr name="icon_count" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="CurveRoundedImageView">
+        <attr name="orientation_curve" format="integer" />
+        <attr name="offset_distance" format="dimension" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="LadderRoundedImageView">
+        <attr name="radius" format="dimension" />
+        <attr name="distanse" format="dimension" />
+        <attr name="corner" format="integer" />
+        <attr name="orientations" format="integer"/>
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="ChatImageView">
+        <attr name="chat_image_mask" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaskImageView">
+        <attr name="mask_color" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ArcView">
+        <attr name="arcColor" format="color"/>
+        <attr name="arcTop" format="boolean"/>
+        <attr name="arcLineColor" format="color"/>
+        <attr name="arcLineWidth" format="dimension"/>
+    </declare-styleable>
+
+    <!-- 圆角遮罩层 -->
+    <declare-styleable name="CircularCoverView">
+        <attr name="left_top_radius" format="dimension" />
+        <attr name="left_bottom_radius" format="dimension" />
+        <attr name="right_top_radius" format="dimension" />
+        <attr name="right_bottom_radius" format="dimension" />
+        <attr name="cover_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CTTourHeaderScrollView">
+        <attr name="top_offset" format="dimension" />
+    </declare-styleable>
+
+    <!-- 标题背景色 -->
+    <attr name="titleBackgroud" format="reference"></attr>
+    <!-- 图片遮罩背景色 -->
+    <attr name="pictureCoverBackgroud" format="reference"></attr>
+    <!-- 底部按钮背景色 -->
+    <attr name="tabBarBackgroud" format="reference"></attr>
+    <!-- 城市商品列表背景色 -->
+    <attr name="cityProductListBackgroud" format="reference"></attr>
+    <!--所有页面的默认背景色-->
+    <attr name="contentBackgroud" format="reference"></attr>
+    <!--颜色是white_F9的背景色-->
+    <attr name="whiteF9Background" format="reference"></attr>
+    <!--咨询的背景色-->
+    <attr name="consultBackground" format="reference"></attr>
+    <!--提交的背景色-->
+    <attr name="commitBackground" format="reference"></attr>
+    <!--聊天输入文字的背景色-->
+    <attr name="chatInputBackground" format="reference"></attr>
+    <!--一个按钮的背景色-->
+    <attr name="oneButtonBackground" format="reference"></attr>
+    <!--聊天日期的背景色-->
+    <attr name="chatDateBackground" format="reference"></attr>
+    <!--日历星期的背景色-->
+    <attr name="calendarWeekBackground" format="reference"></attr>
+    <!--城市页的背景色-->
+    <attr name="cityBackground" format="reference"></attr>
+
+    <!-- 首页线条颜色 -->
+    <attr name="homeLineColor" format="reference"></attr>
+    <!-- 首页粗线条颜色 -->
+    <attr name="homeFatLineColor" format="reference"></attr>
+    <!-- 首页模块内线条颜色 -->
+    <attr name="homeModuleLineColor" format="reference"></attr>
+    <!-- 首页产品间隔的线条颜色 -->
+    <attr name="homeProductLineColor" format="reference"></attr>
+    <!-- 我的页面头像下线条颜色 -->
+    <attr name="myPhotoLineColor" format="reference"></attr>
+    <!-- 我的页面其他线条颜色 -->
+    <attr name="myOtherLineColor" format="reference"></attr>
+    <!-- 我要体验背景的线条颜色 -->
+    <attr name="tryStrokeLineColor" format="reference"></attr>
+    <!-- 城市页天气下的线条颜色 -->
+    <attr name="cityWeatherLineColor" format="reference"></attr>
+    <!-- 登录页线条颜色 -->
+    <attr name="loginLineColor" format="reference"></attr>
+    <!-- 颜色是gray_9线条颜色 -->
+    <attr name="gray9LineColor" format="reference"></attr>
+    <!-- 颜色是gray_B2_alpha50线条颜色 -->
+    <attr name="grayB2alpha50LineColor" format="reference"></attr>
+    <!-- 颜色是gray_B2线条颜色 -->
+    <attr name="grayB2LineColor" format="reference"></attr>
+    <!-- 颜色是gray_D1D2D2线条颜色 -->
+    <attr name="grayD1D2D2LineColor" format="reference"></attr>
+    <!-- 颜色是gray_D8线条颜色 -->
+    <attr name="grayD8LineColor" format="reference"></attr>
+    <!-- 颜色是gray_D_alpha60线条颜色 -->
+    <attr name="grayDalpha60LineColor" format="reference"></attr>
+    <!-- 颜色是gray_E5线条颜色 -->
+    <attr name="grayE5LineColor" format="reference"></attr>
+    <!-- 颜色是gray_ED线条颜色 -->
+    <attr name="grayEDLineColor" format="reference"></attr>
+    <!-- 颜色是white线条颜色 -->
+    <attr name="whiteLineColor" format="reference"></attr>
+    <!-- 颜色是gray_E6线条颜色 -->
+    <attr name="grayE6LineColor" format="reference"></attr>
+    <!-- 颜色是gray_F0线条颜色 -->
+    <attr name="grayF0LineColor" format="reference"></attr>
+    <!-- 颜色是gray_97线条颜色 -->
+    <attr name="gray97LineColor" format="reference"></attr>
+    <!-- 颜色是gray_F8线条颜色 -->
+    <attr name="grayF8LineColor" format="reference"></attr>
+    <!-- 颜色是gray_E8线条颜色 -->
+    <attr name="grayE8LineColor" format="reference"></attr>
+    <!-- 边框颜色 -->
+    <attr name="citiesItemCardStrokeColor" format="reference"></attr>
+
+    <!-- 主题图标 -->
+    <attr name="themeIcon" format="reference"></attr>
+    <!-- 信息图标 -->
+    <attr name="messageIcon" format="reference"></attr>
+    <!-- 首页选中图标 -->
+    <attr name="homeCheckedIcon" format="reference"></attr>
+    <!-- 首页未选中图标 -->
+    <attr name="homeUncheckedIcon" format="reference"></attr>
+    <!-- 城市选中图标 -->
+    <attr name="cityCheckedIcon" format="reference"></attr>
+    <!-- 城市未选中图标 -->
+    <attr name="cityUncheckedIcon" format="reference"></attr>
+    <!-- 我的选中图标 -->
+    <attr name="myCheckedIcon" format="reference"></attr>
+    <!-- 我的未选中图标 -->
+    <attr name="myUncheckedIcon" format="reference"></attr>
+    <!-- 书图标 -->
+    <attr name="bookIcon" format="reference"></attr>
+    <!-- 产品图标 -->
+    <attr name="productIcon" format="reference"></attr>
+    <!-- 首页cctv9图标 -->
+    <attr name="homeCCTV9Icon" format="reference"></attr>
+    <!-- 返回图标 -->
+    <attr name="backIcon" format="reference"></attr>
+    <!-- 分享图标 -->
+    <attr name="shareIcon" format="reference"></attr>
+    <!-- 已经收藏图标 -->
+    <attr name="collectedIcon" format="reference"></attr>
+    <!-- 未收藏图标 -->
+    <attr name="uncollectIcon" format="reference"></attr>
+    <!-- 评论图标 -->
+    <attr name="commentIcon" format="reference"></attr>
+    <!-- 群聊图标 -->
+    <attr name="groupChatIcon" format="reference"></attr>
+    <!-- 添加众投图标 -->
+    <attr name="addVoteIcon" format="reference"></attr>
+
+    <!-- 众投图片 -->
+    <attr name="votePicture" format="reference"></attr>
+    <!-- 视频图片 -->
+    <attr name="videoPicture" format="reference"></attr>
+    <!-- 添加订单图片 -->
+    <attr name="addVotePicture" format="reference"></attr>
+    <!--聊天左边背景的图片-->
+    <attr name="chatLeftPicture" format="reference"></attr>
+    <!--众投左边背景的图片-->
+    <attr name="voteLeftPicture" format="reference"></attr>
+    <!--众投右边背景的图片-->
+    <attr name="voteRightPicture" format="reference"></attr>
+
+    <!-- 标题文字颜色 -->
+    <attr name="titleColor" format="reference"></attr>
+    <!-- 模块标题颜色 -->
+    <attr name="moduleTitleColor" format="reference"></attr>
+    <!-- 产品标题颜色 -->
+    <attr name="productTitleColor" format="reference"></attr>
+    <!-- 产品内容颜色 -->
+    <attr name="productContentColor" format="reference"></attr>
+    <!-- 城市列表副标题 -->
+    <attr name="citySubheadColor" format="reference"></attr>
+    <!-- 底部选项卡文字的颜色 -->
+    <attr name="bottomTabColor" format="reference"></attr>
+    <!-- 我的页面文字颜色 -->
+    <attr name="myColor" format="reference"></attr>
+    <!-- 我的页面id颜色 -->
+    <attr name="myIdColor" format="reference"></attr>
+    <!-- 故事详情页标题选中的颜色 -->
+    <attr name="goodsInfoCheckedColor" format="reference"></attr>
+    <!-- 我要体验的颜色 -->
+    <attr name="tryColor" format="reference"></attr>
+    <!-- 故事详情的简介的颜色 -->
+    <attr name="storyIntroColor" format="reference"></attr>
+    <!-- 城市页天气的颜色 -->
+    <attr name="cityWeatherColor" format="reference"></attr>
+    <!-- 城市页阅读量的颜色 -->
+    <attr name="cityReadColor" format="reference"></attr>
+    <!-- 登录页其他字号的颜色 -->
+    <attr name="loginOtherColor" format="reference"></attr>
+    <!-- 众投页众投者名字的颜色 -->
+    <attr name="voteNameColor" format="reference"></attr>
+    <!-- 直播分享文字的颜色 -->
+    <attr name="liveShareColor" format="reference"></attr>
+    <!-- 横屏直播分享文字的颜色 -->
+    <attr name="landLiveShareColor" format="reference"></attr>
+    <!-- 白色文字的颜色 -->
+    <attr name="whiteWordColor" format="reference"></attr>
+    <!-- 点赞数量的颜色 -->
+    <attr name="likeNumColor" format="reference"></attr>
+    <!-- 直播结束时的“关闭”的颜色 -->
+    <attr name="liveOverColor" format="reference"></attr>
+    <!-- 咨询的颜色 -->
+    <attr name="consultColor" format="reference"></attr>
+    <!-- 提交的颜色 -->
+    <attr name="commitColor" format="reference"></attr>
+</resources>

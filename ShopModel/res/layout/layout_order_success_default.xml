@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_F5"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/chenggan"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_6C6F73"
+        android:layout_marginTop="9dp"
+        android:textSize="18sp"
+        android:text="支付成功"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_6C6F73"
+        android:textSize="12sp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="48dp"
+        android:text="商家将在三个工作日内确认您的出行信息"/>
+
+</LinearLayout>

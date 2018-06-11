@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="20dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/ll_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:maxWidth="190dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textSize="16dp"
+                        android:textColor="@color/blue_6C92C1"
+                        android:text="昵称"/>
+                    <ImageView
+                        android:id="@+id/iv_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/icon_sex_man"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_name"
+                    android:textSize="14dp"
+                    android:textColor="@color/gray_C"
+                    android:text="00:00"/>
+                <TextView
+                    android:id="@+id/tv_follow"
+                    android:layout_width="53dp"
+                    android:layout_height="24dp"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle5_ff697b"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:text="关注"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textSize="16dp"
+                android:textColor="@color/black_5"
+                tools:text="内容"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp" />
+
+            <FrameLayout
+                android:id="@+id/layout_video_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_video_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_video_play" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:textSize="12dp"
+                android:textColor="@color/gray_B"
+                android:text="地址"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+</LinearLayout>

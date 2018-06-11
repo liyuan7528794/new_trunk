@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.travel.lib.ui.PageTurnView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_orignal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原图"/>
+
+            <Button
+                android:id="@+id/btn_black_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="黑白"/>
+
+            <Button
+                android:id="@+id/btn_opposition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="反相"/>
+
+            <Button
+                android:id="@+id/btn_old_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="老照片"/>
+
+            <Button
+                android:id="@+id/btn_intensive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加强饱和度"/>
+            <Button
+                android:id="@+id/btn_lightingColorFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LightingColorFilter的效果"/>
+            <Button
+                android:id="@+id/btn_porterDuffColorFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PorterDuffColorFilter的效果"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/videoCommentWindowLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/line"
+        style="@style/line_D" />
+
+    <EditText
+        android:id="@+id/comment_content_edit"
+        style="@style/text_5_20"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/circle22_f_1_e6"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:hint="发表评论"
+        android:imeOptions="actionSend"
+        android:inputType="text"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textColorHint="@color/gray_C" />
+
+</LinearLayout>

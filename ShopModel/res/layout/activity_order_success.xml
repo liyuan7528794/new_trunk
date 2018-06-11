@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mylhyl.crlayout.SwipeRefreshRecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:crl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/srrv_city"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_F5"
+    android:listSelector="@android:color/transparent"
+    crl:load_animator="true">
+
+</com.mylhyl.crlayout.SwipeRefreshRecyclerView>
+<!--
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_F5">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray_F5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/default_success"
+                layout="@layout/layout_order_success_default"/>
+            <include
+                android:id="@+id/active_title"
+                layout="@layout/layout_order_success_title"/>
+            <include
+                android:id="@+id/active"
+                layout="@layout/layout_order_success_active"/>
+            <include
+                android:id="@+id/city_title"
+                layout="@layout/layout_order_success_title"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/red_FA7E7F"
+                android:listSelector="@android:color/transparent">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>-->

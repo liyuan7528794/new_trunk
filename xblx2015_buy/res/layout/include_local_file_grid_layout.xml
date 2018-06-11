@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              tools:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/text_3_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="17dp"
+        tools:text="直播"/>
+
+    <com.travel.widget.GridViewWithoutMeasure
+        android:id="@+id/gv_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="11dp"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:scrollbarStyle="insideOverlay"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="11dp"
+        tools:layout_height="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <View style="@style/line_D8_margin15"></View>
+</LinearLayout>

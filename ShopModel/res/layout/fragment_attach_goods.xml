@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 附加服务 -->
+        <TextView
+            android:id="@+id/title"
+            style="@style/title_gray"
+            android:text="附加服务"/>
+
+        <View style="@style/line_D8_margin15"></View>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_attach_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</RelativeLayout>

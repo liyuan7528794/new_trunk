@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/transparent"
+             tools:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/interCutNickname"
+        style="@style/text_f_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_margin="5dp"
+        android:ellipsize="end"
+        android:lines="1"
+        tools:text="我的天涯, 你的明月"/>
+
+    <ImageView
+        android:id="@+id/inserCut_close"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_gravity="right|top"
+        android:layout_margin="10dp"
+        android:src="@drawable/inser_cut_close"/>
+
+    <ImageView
+        android:id="@+id/iv_blur_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_alpha50"
+        android:scaleType="center"/>
+
+    <RelativeLayout
+        android:id="@+id/closeInterCutNotifyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/text_f_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="结束当前"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/text_f_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:text="视屏互动？"/>
+
+        <View
+            android:id="@+id/view1"
+            style="@style/line_f"
+            android:layout_above="@+id/linearLayout"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/calseButton"
+                style="@style/text_f_16"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="取消"/>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0.5dp"
+                android:layout_height="45dp"
+                android:layout_above="@+id/calseButton"
+                android:background="@android:color/white"/>
+
+            <Button
+                android:id="@+id/closeButton"
+                style="@style/text_f_16"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="确认"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

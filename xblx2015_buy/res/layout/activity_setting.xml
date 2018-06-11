@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View style="@style/line_E8E9EB"
+            android:layout_marginBottom="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_service"
+            style="@style/my_setting_layout">
+
+            <TextView
+                style="@style/about_text"
+                android:text="@string/personal_profile"/>
+
+            <ImageView style="@style/my_icon_arrow"/>
+
+            <View style="@style/line_E8E9EB"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_safe"
+            style="@style/my_setting_layout">
+
+            <TextView
+                style="@style/about_text"
+                android:text="账号与安全"/>
+
+            <ImageView style="@style/my_icon_arrow"/>
+
+            <View style="@style/line_E8E9EB"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_feedback"
+            style="@style/my_setting_layout">
+
+            <TextView
+                style="@style/about_text"
+                android:text="@string/about_feedback"/>
+
+            <ImageView style="@style/my_icon_arrow"/>
+
+            <View style="@style/line_E8E9EB"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_deal"
+            style="@style/my_setting_layout">
+
+            <TextView
+                style="@style/about_text"
+                android:text="@string/about_deal"/>
+
+            <ImageView style="@style/my_icon_arrow"/>
+
+            <View style="@style/line_E8E9EB"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_about"
+            style="@style/my_setting_layout">
+
+            <TextView
+                style="@style/about_text"
+                android:text="关于我们"/>
+
+            <ImageView style="@style/my_icon_arrow"/>
+
+        </RelativeLayout>
+
+        <View style="@style/line_E8E9EB"
+            android:layout_marginBottom="16dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_cache"
+            style="@style/my_setting_layout">
+
+            <TextView
+                style="@style/about_text"
+                android:text="清除缓存"/>
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0.00MB"/>
+
+        </RelativeLayout>
+        <View style="@style/line_E8E9EB"
+            android:layout_marginBottom="42dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_unlogin"
+            style="@style/my_setting_layout">
+
+            <TextView
+                style="@style/about_text"
+                android:text="退出登录"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+        <View style="@style/line_E8E9EB"/>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_help"
+            style="@style/my_setting_layout"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/about_text"
+                android:text="@string/about_help"/>
+
+            <ImageView style="@style/my_icon_arrow"/>
+
+            <View style="@style/line_E8E9EB"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_version"
+            style="@style/my_setting_layout"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/about_text"
+                android:text="@string/about_new"/>
+
+            <ImageView style="@style/my_icon_arrow"/>
+
+            <View style="@style/line_E8E9EB"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

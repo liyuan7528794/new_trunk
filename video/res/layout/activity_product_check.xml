@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/gray_F5">
+	<ListView 
+	    android:id="@+id/checkProductListView"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:listSelector="@android:color/transparent"
+	    android:divider="@null">
+	    
+	</ListView>
+</RelativeLayout>

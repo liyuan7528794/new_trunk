@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="60dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="69dp">
+
+            <!-- 登录 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="77dp">
+
+                    <ImageView
+                        android:id="@+id/user_iv_image"
+                        android:layout_width="51dp"
+                        android:layout_height="51dp"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/common_pic_user" />
+
+                    <TextView
+                        android:id="@+id/user_tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/user_iv_image"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="点击登录"
+                        android:textColor="@color/black_3"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/user_tv_id"
+                        style="@style/text_A5_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/user_tv_name"
+                        android:layout_below="@+id/user_tv_name"
+                        android:layout_marginTop="11dp"
+                        android:text="ID:——" />
+
+                    <ImageView style="@style/my_icon_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray_E6"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/follow_layout"
+                        style="@style/my_column_layout">
+
+                        <TextView
+                            style="@style/my_column_content"
+                            android:layout_marginRight="4dp"
+                            android:text="关注" />
+
+                        <TextView
+                            android:id="@+id/followNum"
+                            style="@style/my_column_content"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_E5_9"></View>
+
+                    <LinearLayout
+                        android:id="@+id/follower_layout"
+                        style="@style/my_column_layout">
+
+                        <TextView
+                            style="@style/my_column_content"
+                            android:layout_marginRight="4dp"
+                            android:text="粉丝" />
+
+                        <TextView
+                            android:id="@+id/followerNum"
+                            style="@style/my_column_content"
+                            android:text="0" />
+                    </LinearLayout>
+
+                    <View style="@style/line_E5_9"></View>
+
+                    <LinearLayout
+                        android:id="@+id/live_layout"
+                        style="@style/my_column_layout">
+
+                        <TextView
+                            style="@style/my_column_content"
+                            android:layout_marginRight="4dp"
+                            android:text="直播" />
+
+                        <TextView
+                            android:id="@+id/liveNum"
+                            style="@style/my_column_content"
+                            android:text="0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/line_E8E9EB" />
+
+            <FrameLayout
+                android:id="@+id/fl_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+            </FrameLayout>
+
+            <View style="@style/line_F5_15" />
+
+            <!-- 我的主页 废弃-->
+            <RelativeLayout
+                android:id="@+id/usercenterMain"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+                <!--android:background="@drawable/ripple_drawable_bg_black"> 点击水波纹效果-->
+
+                <TextView
+                    android:id="@+id/mainText"
+                    style="@style/text_3_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/myMain" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/cell_icon_arrow" />
+            </RelativeLayout>
+
+            <!-- 直播收入-→我的红币 废弃 -->
+
+            <RelativeLayout
+                android:id="@+id/live_income"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/text_3_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/icon_live_income"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/usercenter_live_income" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:contentDescription="@string/coupons"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/cell_icon_arrow" />
+            </RelativeLayout>
+
+            <View
+                style="@style/line_F2F3F4_margin"
+                android:visibility="gone" />
+            <!-- 红钱袋 -->
+            <RelativeLayout
+                android:id="@+id/my_red_moneybag"
+                style="@style/my_list_layout"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/redMoneybagText"
+                    style="@style/my_list_content"
+                    android:drawableLeft="@drawable/icon_red_money"
+                    android:text="@string/red_moneybag" />
+
+                <ImageView style="@style/my_icon_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/line_E8E9EB_left"
+                android:visibility="gone"/>
+            <!-- 我的订单 -->
+            <RelativeLayout
+                android:id="@+id/rl_my_order"
+                style="@style/my_list_layout">
+
+                <TextView
+                    android:id="@+id/tv_my_order"
+                    style="@style/my_list_content"
+                    android:drawableLeft="@drawable/icon_orders"
+                    android:text="订单" />
+
+                <TextView
+                    android:id="@+id/tv_red_point_my"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12.7dp"
+                    android:layout_toRightOf="@+id/tv_my_order"
+                    android:drawableLeft="@drawable/icon_new_notify"
+                    android:gravity="center"
+                    android:textColor="@color/red_EC6262"
+                    android:textSize="12dp"
+                    android:visibility="gone" />
+
+                <ImageView style="@style/my_icon_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/line_E8E9EB_left" />
+            <!-- 收藏 -->
+            <RelativeLayout
+                android:id="@+id/my_box_room"
+                style="@style/my_list_layout">
+
+                <TextView
+                    android:id="@+id/sellectText"
+                    style="@style/my_list_content"
+                    android:drawableLeft="@drawable/icon_collect"
+                    android:text="收藏" />
+
+                <ImageView style="@style/my_icon_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/line_E8E9EB_left" />
+            <!-- 我的众投 -->
+            <RelativeLayout
+                android:id="@+id/my_public_vote"
+                style="@style/my_list_layout">
+
+                <TextView
+                    android:id="@+id/voteText"
+                    style="@style/my_list_content"
+                    android:drawableLeft="@drawable/icon_vote"
+                    android:text="@string/myPublicVote" />
+
+                <ImageView style="@style/my_icon_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/line_E8E9EB" />
+
+            <View style="@style/line_F5_15" />
+            <!-- 我的记录 废弃-->
+            <RelativeLayout
+                android:id="@+id/my_record"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/recordText"
+                    style="@style/text_3_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="我的记录" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/cell_icon_arrow" />
+            </RelativeLayout>
+
+            <!-- 商家订单 -->
+            <LinearLayout
+                android:id="@+id/ll_seller_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/my_seller_control"
+                    style="@style/my_list_layout">
+
+                    <TextView
+                        android:id="@+id/orderText"
+                        style="@style/my_list_content"
+                        android:drawableLeft="@drawable/icon_seller_control"
+                        android:text="商家后台管理" />
+
+                    <TextView
+                        android:id="@+id/tv_red_point"
+                        style="@style/text_f_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.7dp"
+                        android:layout_toRightOf="@+id/orderText"
+                        android:drawableLeft="@drawable/icon_new_notify"
+                        android:gravity="center"
+                        android:visibility="gone" />
+
+                    <ImageView style="@style/my_icon_arrow" />
+                </RelativeLayout>
+
+                <View style="@style/line_E8E9EB" />
+
+                <View style="@style/line_F5_15" />
+
+                <RelativeLayout
+                    android:id="@+id/usercenterOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/text_3_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/orderManage" />
+
+                    <TextView
+                        style="@style/text_f_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.7dp"
+                        android:drawableLeft="@drawable/icon_new_notify"
+                        android:gravity="center"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/cell_icon_arrow" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/line_F2F3F4_margin"
+                    android:visibility="gone" />
+                <!-- 供应商订单 -->
+                <RelativeLayout
+                    android:id="@+id/usercenter_supplier"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/orderText_supplier"
+                        style="@style/text_3_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="供应商订单" />
+
+                    <TextView
+                        android:id="@+id/tv_red_point_supplier"
+                        style="@style/text_f_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.7dp"
+                        android:layout_toRightOf="@+id/orderText_supplier"
+                        android:drawableLeft="@drawable/icon_new_notify"
+                        android:gravity="center"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_supplier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/cell_icon_arrow" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/line_F2F3F4_margin"
+                    android:visibility="gone" />
+                <!-- 众投管理 -->
+
+                <RelativeLayout
+                    android:id="@+id/public_vote_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/voteText_manage"
+                        style="@style/text_3_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/publicVoteManage" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/cell_icon_arrow" />
+                </RelativeLayout>
+                <!-- 电商收入 -->
+                <RelativeLayout
+                    android:id="@+id/business_income"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/incomeText"
+                        style="@style/text_3_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/usercenter_business_income" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/cell_icon_arrow" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/line_F2F3F4_margin"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <RelativeLayout style="@style/my_list_layout">
+
+                    <TextView
+                        style="@style/my_list_content"
+                        android:drawableLeft="@drawable/icon_plan"
+                        android:text="行程安排" />
+
+                    <ImageView style="@style/my_icon_arrow" />
+                </RelativeLayout>
+
+                <View style="@style/line_E8E9EB" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/usercenterSetting"
+                style="@style/my_list_layout">
+
+                <TextView
+                    style="@style/my_list_content"
+                    android:drawableLeft="@drawable/icon_setting"
+                    android:text="设置" />
+
+                <ImageView style="@style/my_icon_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/line_E8E9EB" />
+
+            <View
+                android:id="@+id/v"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_F5" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

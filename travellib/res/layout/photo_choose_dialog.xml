@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent"
+              android:gravity="bottom"
+              android:orientation="vertical"
+              android:padding="5dp">
+
+    <Button
+        android:id="@+id/btn_map_storage"
+        style="@style/text_3_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_gallery_selector"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="图库"/>
+
+    <View style="@style/line_D8"/>
+
+    <Button
+        android:id="@+id/btn_take_photo"
+        style="@style/text_3_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_camera_selector"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="拍照"/>
+
+    <Button
+        android:id="@+id/btn_cancle"
+        style="@style/text_3_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/photo_cancel_selector"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="取消"/>
+
+</LinearLayout>

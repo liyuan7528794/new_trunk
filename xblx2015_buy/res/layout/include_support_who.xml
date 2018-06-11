@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/ll_support_who"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:orientation="horizontal"
+              android:visibility="gone"
+              tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/tv_support_buyer"
+        style="@style/text_f_14"
+        android:layout_width="@dimen/vote_support_who_circle_diameter"
+        android:layout_height="@dimen/vote_support_who_circle_diameter"
+        android:layout_marginLeft="@dimen/vote_support_who_circle_margin"
+        android:background="@drawable/bg_circle_selector_pk_blue"
+        android:gravity="center"
+        android:text="支持\n买方"/>
+
+    <TextView
+        android:id="@+id/tv_num_of_support_buyer"
+        style="@style/text_blue_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        tools:text="16票"/>
+
+    <TextView
+        android:id="@+id/tv_buyer_win"
+        style="@style/text_f_12"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/oval_red"
+        android:gravity="center"
+        android:text="胜"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_seller_win"
+        style="@style/text_f_12"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/oval_red"
+        android:gravity="center"
+        android:text="胜"/>
+
+    <TextView
+        android:id="@+id/tv_num_of_support_seller"
+        style="@style/text_red_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        tools:text="16票"/>
+
+    <TextView
+        android:id="@+id/tv_support_seller"
+        style="@style/text_f_14"
+        android:layout_width="@dimen/vote_support_who_circle_diameter"
+        android:layout_height="@dimen/vote_support_who_circle_diameter"
+        android:layout_marginRight="@dimen/vote_support_who_circle_margin"
+        android:background="@drawable/bg_circle_selector_pk_red"
+        android:gravity="center"
+        android:text="支持\n卖方"/>
+</LinearLayout>

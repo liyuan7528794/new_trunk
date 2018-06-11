@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/circle4_f"
+        android:orientation="vertical">
+
+        <com.travel.layout.SelectableRoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_out_goods_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:sriv_left_bottom_corner_radius="0dp"
+            app:sriv_left_top_corner_radius="4dp"
+            app:sriv_right_bottom_corner_radius="0dp"
+            app:sriv_right_top_corner_radius="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_out_goods_title"
+            style="@style/text_3_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:lines="1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_watch"
+                style="@style/text_9_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阅读"/>
+
+            <TextView
+                android:id="@+id/tv_watch_num"
+                style="@style/text_9_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/tv_comment"
+                style="@style/text_9_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="评论"/>
+
+            <TextView
+                android:id="@+id/tv_comment_num"
+                style="@style/text_9_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="0"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

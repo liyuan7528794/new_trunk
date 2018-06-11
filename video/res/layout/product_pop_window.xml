@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/videoCommentWindowLayout">
+
+    <TextView
+        android:id="@+id/tv_no_product"
+        style="@style/text_9_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/none_notify"
+        android:gravity="center"
+        android:text="当前没有任何商品"
+        android:visibility="gone" />
+    
+	<com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/productList"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="15dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:smoothScrollbar="true">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    
+</RelativeLayout>

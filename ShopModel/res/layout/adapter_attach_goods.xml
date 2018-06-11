@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <!-- 附加服务选择 -->
+    <LinearLayout
+        style="@style/count_price_layout"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tv_attach_goods_name"
+            style="@style/count_price_text_show"
+            android:text="成人"/>
+
+        <TextView
+            android:id="@+id/tv_attach_goods_price"
+            style="@style/count_price_text_price"
+            android:text="￥0/人"/>
+
+        <!-- 可编辑 -->
+        <include
+            android:id="@+id/ll_editable"
+            layout="@layout/layout_m_p"
+            android:visibility="gone"
+            tools:visibility="visible"></include>
+
+        <!-- 不可编辑 -->
+        <TextView
+            android:id="@+id/tv_attach_count"
+            style="@style/text_3_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/v_last_line"
+        style="@style/line_D8_margin15"
+        android:layout_marginRight="0dp"></View>
+</LinearLayout>

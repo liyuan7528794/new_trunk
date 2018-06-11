@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_left_uperest">
+
+    <View
+        android:id="@+id/line_bg"
+        android:layout_width="@dimen/vote_line_width"
+        android:layout_height="25dp"
+        android:layout_above="@+id/ll_bottom_line"
+        android:layout_marginLeft="@dimen/list_item_vote_line_margin_left"
+        android:background="@color/blue_508CEE"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/text_blue_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/line_bg"
+        tools:text="2016-06-12 18:00:45"/>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginLeft="@dimen/vote_timer_circle_margin">
+
+        <View
+            android:layout_width="@dimen/list_item_vote_circle_diameter"
+            android:layout_height="@dimen/list_item_vote_circle_diameter"
+            android:background="@drawable/oval_blue508cee"/>
+
+        <View
+            android:layout_width="@dimen/list_item_vote_timer_long"
+            android:layout_height="@dimen/vote_line_width"
+            android:layout_gravity="center_vertical"
+            android:background="@color/blue_508CEE"/>
+
+        <View
+            android:layout_width="@dimen/list_item_vote_circle_diameter"
+            android:layout_height="@dimen/list_item_vote_circle_diameter"
+            android:background="@drawable/oval_blue508cee"/>
+    </LinearLayout>
+</RelativeLayout>

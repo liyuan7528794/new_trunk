@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/telephone_edit"
+        style="@style/edit_c0_title_color_12"
+        android:layout_width="217dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="请输入手机号"
+        android:lines="1" />
+
+    <View
+        android:layout_width="217dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_93" />
+
+    <RelativeLayout
+        android:layout_width="217dp"
+        android:layout_height="42dp">
+
+        <EditText
+            android:id="@+id/check_code_edit"
+            style="@style/edit_c0_title_color_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/get_code_button"
+            android:hint="请输入验证码" />
+
+        <Button
+            android:id="@+id/get_code_button"
+            style="@style/text_3_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="发送验证码" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/get_code_button"
+            android:background="@color/gray_D" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="217dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_93" />
+
+    <EditText
+        android:id="@+id/et_password"
+        style="@style/edit_c0_title_color_12"
+        android:layout_width="217dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="请输入密码"
+        android:lines="1"
+        android:password="true"/>
+
+    <View
+        android:layout_width="217dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_93" />
+
+    <LinearLayout
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="13dp"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_6_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:lines="1"
+            android:text="注册即表示您同意" />
+
+        <TextView
+            android:id="@+id/textView_agree"
+            style="@style/text_6_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="《红了旅行用户协议》" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/regist_button"
+        style="@style/text_3_16"
+        android:layout_width="131dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/stroke1_333_circle43"
+        android:gravity="center"
+        android:text="注册" />
+
+</LinearLayout>

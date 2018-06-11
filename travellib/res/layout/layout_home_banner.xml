@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:foreground="@color/transparent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/convenientBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </FrameLayout>
+    <!--<com.travel.layout.ArcView
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:layout_gravity="bottom"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:arcColor="#fff"/>-->
+</FrameLayout>

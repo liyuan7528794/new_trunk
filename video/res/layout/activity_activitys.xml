@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/liveRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_F5">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview_activitys"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both">
+
+        <LinearLayout
+            android:id="@+id/sub_root_lin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/activityCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"/>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/activityTimes"
+                    style="@style/text_3_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:id="@+id/activityContent"
+                    style="@style/text_3_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/activityTimes"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="14dp"
+                    android:lines="4"/>
+
+                <TextView
+                    android:id="@+id/activityContents"
+                    style="@style/text_3_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/activityTimes"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="14dp"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/ellipImage"
+                    android:layout_width="24dp"
+                    android:layout_height="16dp"
+                    android:layout_below="@+id/activityContent"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ellip_open_icon"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/goVoteImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/vote_banner"/>
+
+            <com.travel.layout.MyGridView
+                android:id="@+id/activitysGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:alpha="150"
+                android:gravity="center"
+                android:horizontalSpacing="5dip"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="2"
+                android:verticalSpacing="5dip">
+            </com.travel.layout.MyGridView>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <ImageView
+        android:id="@+id/startLive"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/go_activitys"/>
+</RelativeLayout>

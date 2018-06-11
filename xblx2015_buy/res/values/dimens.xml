@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_vote_line_margin_left">26dp</dimen>
+    <dimen name="list_item_vote_item_margin_right">42dp</dimen>
+    <dimen name="list_item_vote_item_content_margin">42dp</dimen>
+    <dimen name="radius_vote_tab">5dp</dimen>
+    <dimen name="list_item_vote_content_padding">15dp</dimen>
+    <dimen name="list_item_vote_circle_diameter">10dp</dimen>
+    <dimen name="list_item_vote_grid_space">5dp</dimen>
+    <dimen name="list_item_margin_top">15dp</dimen>
+    <dimen name="title_tab_height">30dp</dimen>
+    <dimen name="timer_recorder_audio_circle_diameter">10dp</dimen>
+    <dimen name="vote_support_who_circle_diameter">50dp</dimen>
+    <dimen name="vote_line_width">1dp</dimen>
+    <dimen name="list_item_vote_bg_radius">5dp</dimen>
+    <dimen name="list_item_vote_content_top_timer">10dp</dimen>
+    <dimen name="vote_support_who_circle_margin">2dp</dimen>
+    <dimen name="vote_header_margin">10dp</dimen>
+    <dimen name="vote_header_line_margin">36dp</dimen>
+    <dimen name="vote_timer_circle_margin">21dp</dimen>
+    <dimen name="vote_up_file_padding_horizontal">15dp</dimen>
+    <dimen name="vote_up_file_margin">22dp</dimen>
+    <dimen name="list_item_vote_timer_long">140dp</dimen>
+    <dimen name="list_item_vote_padding_top">10dp</dimen>
+    <dimen name="list_item_vote_middle_view_height">5dp</dimen>
+    <dimen name="chat_function_size">12sp</dimen>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    </style>
+
+    <style name="Theme" parent="android:Theme">
+
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="android:style/Theme.Black.NoTitleBar.Fullscreen"
+        type="text/css">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="ThatsNewTheme" parent="android:style/Theme.Black.NoTitleBar.Fullscreen"
+        type="text/css">
+    </style>
+
+        <!--<item name="android:background">@drawable/ripple_drawable_bg</item>-->
+    <style name="main_tab_bottom">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:drawablePadding">1dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+        <!--<item name="android:textColor">@drawable/radio_group_selector_textcolor</item>-->
+
+    <!-- 底部弹窗动画 -->
+    <style name="BelowPupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <!-- 聊天界面相关 -->
+    <style name="about_text" parent="text_3_14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="about_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:src">@drawable/cell_icon_arrow</item>
+    </style>
+
+    <style name="income_icon_style" parent="text_3_14">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ll_withdraw_cash">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+    
+    <style name="et_withdraw_cash" parent="text_3_14">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:textColorHint">@color/gray_C0</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="vote_upload_file_pk_blue" parent="text_f_12">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/vote_up_file_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/vote_up_file_padding_horizontal</item>
+        <item name="android:background">@drawable/circle5_blue508cee</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="vote_upload_file_pk_red" parent="vote_upload_file_pk_blue">
+        <item name="android:background">@drawable/circle5_3</item>
+    </style>
+
+    <style name="home_red_point" parent="red_point">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">9dp</item>
+        <item name="android:layout_marginBottom">14dp</item>
+    </style>
+
+    <style name="red_point_message" parent="text_f_10">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">@drawable/oval_red</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="red_point" parent="text_f_10">
+        <item name="android:layout_width">8dp</item>
+        <item name="android:layout_height">8dp</item>
+        <item name="android:background">@drawable/oval_red_1_f</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="pb_upload_file">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_upload_drawable</item>
+    </style>
+
+    <style name="maskDialog" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/colorMask</item>
+    </style>
+</resources>

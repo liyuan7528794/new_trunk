@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/activityReceiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="准备接受Fragment传来的数据..."/>
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.travel.lib.fragment_interface.BlankFragment"
+        android:tag="BlankFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="100dp"/>
+</RelativeLayout>

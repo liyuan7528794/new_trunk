@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_title_bar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="7dp"
+        android:src="@drawable/nav_icon_arrow_day"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/text_3_16"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/iv_title_bar_left"
+        android:gravity="center"
+        tools:text="左边的标题"/>
+
+    <TextView
+        android:id="@+id/tv_middle_title"
+        style="@style/text_3_16"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        tools:text="中间的标题"/>
+
+    <ImageView
+        android:id="@+id/iv_title_bar_right"
+        android:layout_width="73dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        tools:src="@drawable/icon_trash"/>
+
+    <FrameLayout
+        android:id="@+id/line_title_bar"
+        style="@style/line_B2_50"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+</RelativeLayout>

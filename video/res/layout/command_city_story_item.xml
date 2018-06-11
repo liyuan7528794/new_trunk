@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:background="@drawable/find_bg_shadow"
+    android:orientation="vertical"
+    android:paddingBottom="3dp">
+
+    <com.travel.layout.SelectableRoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_command_city_story_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        app:sriv_left_top_corner_radius="8dp"
+        app:sriv_right_top_corner_radius="8dp" />
+
+    <TextView
+        android:id="@+id/tv_command_city_story_title"
+        style="@style/text_5_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingRight="26dp" />
+
+    <TextView
+        android:id="@+id/tv_command_city_description"
+        style="@style/text_A1_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:maxLines="2" />
+
+</LinearLayout>

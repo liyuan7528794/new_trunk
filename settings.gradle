@@ -1,0 +1,3 @@
+include ':xblx2015_buy', ':travellib', ':tencentav', ':imserver', "IjkPlayer", "library"
+include 'photolib', 'ShopModel', "GreenDaoGenerator", "commonrefreshlayout"
+include ':BarCode_library', 'zxinglite'

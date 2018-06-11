@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <!-- 背景 -->
+    <com.travel.layout.CurveRoundedImageView
+        android:id="@+id/iv_cityinfo_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        app:offset_distance="-96dp"
+        app:orientation_curve="3"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="129dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_cityinfo_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/black_6C6F73"
+            android:textSize="14dp"
+            tools:text="城市"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cityinfo_temperature"
+                android:textSize="12dp"
+                android:textColor="@color/gray_97"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="温度"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/gray_97"></View>
+
+            <TextView
+                android:id="@+id/tv_cityinfo_weather"
+                android:textSize="12dp"
+                android:textColor="@color/gray_97"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="天气"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"></View>
+    </LinearLayout>
+</FrameLayout>

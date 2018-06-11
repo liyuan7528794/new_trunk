@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:paddingLeft="15dp"
+              android:paddingTop="18dp"
+              android:id="@+id/ll_view">
+
+    <ImageView
+        android:id="@+id/iv_goodsinfo_comment_photo"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:id="@+id/tv_goodsinfo_comment_name"
+                style="@style/text_3_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="名字"/>
+
+            <TextView
+                android:id="@+id/tv_goodsinfo_comment_like"
+                style="@style/text_6_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/like_selector"
+                android:text="10"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_goodsinfo_comment_time"
+            style="@style/text_9_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="昨天"/>
+
+        <TextView
+            android:id="@+id/tv_goodsinfo_comment_content"
+            style="@style/text_3_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            tools:text="的书法家的爽肤水的解放军第三季飞洛杉矶"/>
+
+        <View style="@style/line_E6"
+            android:id="@+id/v_line_comment"></View>
+    </LinearLayout>
+</LinearLayout>

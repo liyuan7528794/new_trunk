@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/ripple_drawable_bg_black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cities_item_card_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp">
+
+                <!-- 名字 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/text_3_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_orders_list_red_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:drawableLeft="@drawable/icon_new_notify"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <!-- 状态 -->
+                <TextView
+                    android:id="@+id/tv_status"
+                    style="@style/text_red_FB7575_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View
+                android:layout_marginRight="31dp"
+                style="@style/line_D8"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <!-- 图片 -->
+                <ImageView
+                    android:id="@+id/iv_goods"
+                    android:layout_width="110dp"
+                    android:layout_height="102dp"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_toRightOf="@+id/iv_goods"
+                    android:orientation="vertical">
+
+                    <!-- 标题 -->
+                    <TextView
+                        android:id="@+id/tv_goods_title"
+                        style="@style/text_3_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"/>
+                    <!-- 出发地 -->
+                    <TextView
+                        android:id="@+id/tv_start_place"
+                        style="@style/text_9_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="出发地："
+                        />
+                    <!-- 出发人员数 -->
+                    <TextView
+                        android:id="@+id/tv_peple_num"
+                        style="@style/text_9_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="人员："
+                        />
+                    <!-- 出发时间 -->
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        style="@style/text_9_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <!-- 金额 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_3_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="金额:"/>
+
+                        <TextView
+                            android:id="@+id/tv_total_price_show"
+                            style="@style/text_9_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+
+                        <!--<TextView
+                            android:id="@+id/tv_payment_price_show"
+                            style="@style/text_3_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>-->
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_marginRight="31dp"
+                android:id="@+id/v_line_manage"
+                style="@style/line_D8"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp">
+                <TextView
+                    android:id="@+id/tv_payment_price_show"
+                    style="@style/text_red_FB7575_14"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="￥20000"/>
+                <TextView
+                    android:id="@+id/tv_accept"
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/circle29_f_one_f1"
+                    android:textColor="@color/black_6C6F73"
+                    android:textSize="12dp"
+                    android:text="接受"/>
+                <TextView
+                    android:id="@+id/tv_refuse"
+                    android:gravity="center"
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_accept"
+                    android:background="@drawable/circle29_f_one_f1"
+                    android:textColor="@color/black_6C6F73"
+                    android:layout_marginRight="15dp"
+                    android:textSize="12dp"
+                    android:text="拒绝"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

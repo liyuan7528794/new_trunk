@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/userName"
+        style="@style/edit_c0_title_color_12"
+        android:layout_width="217dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="请输入手机号"
+        android:lines="1" />
+
+    <View
+        android:layout_width="217dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_93" />
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/edit_c0_title_color_12"
+        android:layout_width="217dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="请输入密码"
+        android:lines="1"
+        android:password="true"/>
+
+    <View
+        android:layout_width="217dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_93" />
+
+    <TextView
+        android:id="@+id/forgetPwdLayout"
+        style="@style/text_6_12"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="right"
+        android:text="忘记密码" />
+
+    <Button
+        android:id="@+id/login"
+        style="@style/text_3_16"
+        android:layout_width="131dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/stroke1_333_circle43"
+        android:gravity="center"
+        android:text="登录" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.amap.api.maps.MapView>
+    <com.travel.video.widget.menu.FilterMenuLayout
+        android:id="@+id/filter_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:visibility="gone"
+        android:elevation="4dp"
+        app:fm_expandedRadius="100dp"
+        app:fm_collapsedRadius="30dp"
+        app:fm_centerBottom="38dp"
+        app:fm_centerHorizontal="true"
+        app:fm_primaryColor="@color/black_alpha75"
+        app:fm_primaryDarkColor="@color/black_alpha75">
+    </com.travel.video.widget.menu.FilterMenuLayout>
+    <LinearLayout 
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <RelativeLayout 
+            android:id="@+id/activity_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+	        <ImageView 
+	            android:id="@+id/activity_cover"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:src="@drawable/activitys_background"/>
+	        <com.travel.layout.SlideShowView  
+				android:id="@+id/slideshowView"
+				android:layout_width="228dp"
+				android:layout_height="152dp"
+				android:layout_alignBottom="@+id/activity_cover"
+				android:layout_marginBottom="29dp"
+				android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <ImageView 
+            android:id="@+id/up_down_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:visibility="gone"
+            android:src="@drawable/activity_allow_icon"/>
+    </LinearLayout>
+
+	<com.travel.video.widget.VideoMenu
+		android:id="@+id/videoMenu"
+		android:layout_width="117dp"
+		android:layout_height="52dp"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="40dp"/>
+
+</RelativeLayout>

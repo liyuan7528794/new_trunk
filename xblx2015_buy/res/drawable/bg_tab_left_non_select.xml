@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:right="-2dp">
+        <shape android:shape="rectangle">
+            <size android:width="57dp" android:height="@dimen/title_tab_height"/>
+            <solid android:color="@color/white"/>
+            <stroke android:width="2dp"
+                android:color="@color/red_FF2942"
+                />
+            <corners android:topLeftRadius="@dimen/radius_vote_tab"
+                android:bottomLeftRadius="@dimen/radius_vote_tab"
+                android:topRightRadius="0dp"
+                android:bottomRightRadius="0dp"
+                />
+        </shape>
+    </item>
+</layer-list>

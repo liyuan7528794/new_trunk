@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#01ffffff">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle15_f"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="7dp"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:textColor="@color/black_373F47"
+        android:text="标题"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/delta_day"/>
+
+</RelativeLayout>

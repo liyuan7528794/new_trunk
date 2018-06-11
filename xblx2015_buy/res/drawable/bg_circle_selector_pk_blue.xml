@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/oval_blue508cee"
+          android:state_enabled="true"/>
+    <item android:drawable="@drawable/oval_c0"
+          android:state_enabled="false"/>
+</selector>

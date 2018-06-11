@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+
+    <LinearLayout
+        android:id="@+id/ll_liveincome_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/income_icon_style"
+                android:drawableTop="@drawable/icon_redmoney"
+                android:text="@string/withdrawcash_redmoney" />
+
+            <TextView
+                android:id="@+id/tv_redmoney"
+                style="@style/text_red_36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tv_recharge"
+                style="@style/text_f_17"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="60dp"
+                android:background="@color/black_3"
+                android:gravity="center"
+                android:text="@string/liveincome_recharge" />
+
+            <TextView
+                android:id="@+id/tv_withdraw_cash"
+                style="@style/text_f_17"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/black_3"
+                android:gravity="center"
+                android:text="@string/liveincome_withdraw_cash" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_question_live_income"
+            style="@style/text_9_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal|bottom"
+            android:text="@string/liveincome_question"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

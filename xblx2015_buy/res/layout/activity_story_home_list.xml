@@ -1,0 +1,25 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:crl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_F5">
+    <TextView
+        android:id="@+id/noneNotify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/none_notify"
+        android:gravity="center"
+        style="@style/text_9_16"
+        android:text="当前没有数据！"/>
+
+    <com.mylhyl.crlayout.SwipeRefreshRecyclerView
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        crl:load_animator="true">
+    </com.mylhyl.crlayout.SwipeRefreshRecyclerView>
+</RelativeLayout>

@@ -1,0 +1,169 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        applicationId "com.ctsmedia.hltravel"
+        multiDexEnabled true
+
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi"
+        }
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src', '../video/src']
+            resources.srcDirs = ['src', '../video/src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res', '../video/res']
+            assets.srcDirs = ['assets']
+//            jniLibs.srcDirs = ['../video/libs', 'libs']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'travelshop'
+            keyPassword '123456'
+            storeFile file('../travelshop')
+            storePassword '123456'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+            signingConfig signingConfigs.release
+            buildConfigField "String", "Root_Url", "\"http://www.hongleapp.com/xblx\""
+            buildConfigField "String", "Chat_IP", "\"120.27.134.179\""
+            buildConfigField "String", "Root_Url_ShareStory", "\"http://www.hongleapp.com\""
+            buildConfigField "int", "SDK_APPID", "1400015172"
+            buildConfigField "int", "ACCOUNT_TYPE", "7703"
+            buildConfigField "int", "BUSSID_HW", "373"
+            buildConfigField "String", "OSS_ROOT_URL","\"http://img.honglelx.com/\""
+        }
+
+        debug {
+            buildConfigField "String", "Root_Url", "\"http://218.247.21.2/xblx\""
+            buildConfigField "String", "Chat_IP", "\"218.247.21.2\""
+            buildConfigField "String", "Root_Url_ShareStory", "\"http://218.247.21.2\""
+            buildConfigField "int", "SDK_APPID", "1400016657" /*"1400015172"*/
+            buildConfigField "int", "ACCOUNT_TYPE", "7703" /*/"7703"*/
+            buildConfigField "int", "BUSSID_HW", "380"
+            buildConfigField "String", "OSS_ROOT_URL","\"http://hltext.img-cn-hangzhou.aliyuncs.com/\""
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+            signingConfig signingConfigs.release
+        }
+
+        debugJiao.initWith(buildTypes.debug)
+        debugJiao {
+            buildConfigField "String", "Root_Url", "\"http://10.0.0.114:8080/xblx\""
+            buildConfigField "String", "Chat_IP", "\"10.0.0.114\""
+        }
+
+        debugWei.initWith(buildTypes.debug)
+        debugWei {
+            buildConfigField "String", "Root_Url", "\"http://10.0.0.204/xblx\""
+            buildConfigField "String", "Chat_IP", "\"10.0.0.204\""
+        }
+        debugLong.initWith(buildTypes.debug)
+        debugLong {
+            buildConfigField "String", "Root_Url", "\"http://10.0.0.114:8081/xblx\""
+            buildConfigField "String", "Chat_IP", "\"10.0.0.114\""
+        }
+        debugKun.initWith(buildTypes.debug)
+        debugKun {
+            buildConfigField "String", "Root_Url", "\"http://10.0.0.205:8080/xblx\""
+            buildConfigField "String", "Chat_IP", "\"10.0.0.205\""
+        }
+        release218.initWith(buildTypes.release)
+        release218{
+            buildConfigField "String", "Root_Url", "\"http://218.247.21.2/xblx\""
+            buildConfigField "String", "Chat_IP", "\"218.247.21.2\""
+            buildConfigField "String", "Root_Url_ShareStory", "\"218.247.21.2\""
+            buildConfigField "int", "SDK_APPID", "1400016657" /*"1400015172"*/
+            buildConfigField "int", "ACCOUNT_TYPE", "7703" /*/"7703"*/
+            buildConfigField "int", "BUSSID_HW", "380"
+            buildConfigField "String", "OSS_ROOT_URL","\"http://hltext.img-cn-hangzhou.aliyuncs.com/\""
+        }
+        releaseTest.initWith(buildTypes.release)
+        releaseTest{
+            buildConfigField "String", "Root_Url", "\"http://47.97.61.114/xblx\""
+            buildConfigField "String", "Chat_IP", "\"47.97.61.114\""
+            buildConfigField "String", "Root_Url_ShareStory", "\"47.97.61.114\""
+            buildConfigField "int", "SDK_APPID", "1400016657" /*"1400015172"*/
+            buildConfigField "int", "ACCOUNT_TYPE", "7703" /*/"7703"*/
+            buildConfigField "int", "BUSSID_HW", "380"
+            buildConfigField "String", "OSS_ROOT_URL","\"http://hltext.img-cn-hangzhou.aliyuncs.com/\""
+        }
+
+        releaseDebug.initWith(buildTypes.release)
+        releaseDebug{
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+    // Run lint checks but don't abort build
+    lintOptions {
+        abortOnError false
+
+        // 禁用资源类型检测，这样在打包过程中就不会因为资源类型不匹配而提示错误了
+        // 解决打包时的报错Error:Error: Expected a color resource id (R.color.) but received an RGB integer [ResourceType]
+        disable "ResourceType"
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+//    incremental true
+
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile project(':ShopModel')
+    compile project(':travellib')
+    compile project(':imserver')
+    compile project(':library')
+    compile project(':tencentav')
+//    compile project(':wyp_learn')
+    compile files('libs/HwPush_SDK_V2705.jar')
+
+    /* 视频合成切割包 */
+    compile 'com.googlecode.mp4parser:isoparser:1.1.21'
+
+    compile 'com.rockerhieu.emojicon:library:1.3.3'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+
+    /*compile('cn.qqtheme.framework:WheelPicker:23+') {
+        exclude group: 'com.android.support'
+    }*/
+
+//    configurations.all {
+//
+//        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+//            def requested = details.requested
+//            if (requested.group == 'com.android.support') {
+//                if (!requested.name.startsWith("multidex")) {
+//                    details.useVersion '25.3.0'
+//                }
+//            }
+//        }
+//    }
+}

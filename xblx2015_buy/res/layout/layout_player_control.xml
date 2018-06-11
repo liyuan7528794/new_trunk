@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+    <ImageView
+        android:id="@+id/iv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/camera_icon_play_black"/>
+
+    <TextView
+        android:id="@+id/tv_start_time"
+        style="@style/text_3_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_start"
+        android:layout_marginLeft="15dp"
+        android:text="00:00"/>
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_start_time"
+        android:layout_toLeftOf="@+id/tv_end_time"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:max="1000"
+        android:maxHeight="1dp"
+        android:minHeight="1dp"
+        android:thumb="@drawable/oval_black"
+        android:progress="0"
+        android:progressDrawable="@drawable/seek_bar_style"
+        android:thumbOffset="10dip" />
+
+    <TextView
+        android:id="@+id/tv_end_time"
+        style="@style/text_3_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="00:00"/>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_F5">
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/gv_grid_view"
+        android:numColumns="2"
+        android:background="@color/gray_F5"
+        ptr:ptrAnimationStyle="flip"
+        android:paddingTop="5dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="2dp"
+        android:listSelector="@android:color/transparent"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+    <TextView
+        android:id="@+id/none_notify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/none_notify"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:gravity="center"
+        style="@style/text_9_16"
+        android:text="当前没有未发布的视频！"/>
+</RelativeLayout>

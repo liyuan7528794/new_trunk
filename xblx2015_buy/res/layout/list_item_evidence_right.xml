@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="@dimen/vote_line_width"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/list_item_vote_line_margin_left"
+        android:background="@color/blue_508CEE"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/list_item_margin_top"
+        tools:layout_width="400dp">
+
+        <include
+            android:id="@+id/include_timer"
+            layout="@layout/list_item_evidence_timer_right"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/include_timer"
+            android:layout_marginLeft="@dimen/list_item_vote_item_margin_right"
+            android:layout_marginRight="@dimen/list_item_vote_item_content_margin"
+            android:layout_marginTop="@dimen/list_item_vote_content_top_timer"
+            android:background="@drawable/circle5_3"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/list_item_vote_padding_top"
+            android:paddingLeft="@dimen/list_item_vote_content_padding"
+            android:paddingRight="@dimen/list_item_vote_content_padding"
+            android:paddingTop="@dimen/list_item_vote_padding_top">
+
+            <com.travel.widget.GridViewWithoutMeasure
+                android:id="@+id/gv_grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:horizontalSpacing="@dimen/list_item_vote_grid_space"
+                android:listSelector="@null"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/list_item_vote_grid_space"/>
+
+            <View
+                android:id="@+id/middle_space"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_item_vote_middle_view_height"/>
+
+            <TextView
+                android:id="@+id/tv_introduction"
+                style="@style/text_f_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gv_grid_view"
+                android:lineSpacingExtra="10dp"
+                tools:text="呕心沥血, 艰难走一遭,\n世界之大, 无奇不有,\n我辈虽是蓬蒿人, 焉能任由宰割坑杀-_-|"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/vote_line_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/list_item_vote_line_margin_left"
+        android:background="@color/red_FF2942"/>
+</FrameLayout>

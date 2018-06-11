@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/circle4_f_point5_d8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_vote_status"
+            android:textSize="12dp"
+            android:textColor="@color/gray_97"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            tools:text="已结束" />
+
+        <RelativeLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="310dp"
+            android:layout_height="149dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal">
+            <com.travel.layout.LadderRoundedImageView
+                android:id="@+id/left_img"
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_alignParentLeft="true"
+                app:orientations="0"
+                app:distanse="64dp"
+                app:corner="1"/>
+            <com.travel.layout.LadderRoundedImageView
+                android:id="@+id/right_img"
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_alignParentRight="true"
+                app:orientations="0"
+                app:distanse="64dp"
+                app:corner="3"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_vs"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/transparent"/>
+        </RelativeLayout>
+        <View style="@style/line_D"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:textSize="14dp"
+            android:textColor="@color/black_383F4F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+    </LinearLayout>
+</FrameLayout>

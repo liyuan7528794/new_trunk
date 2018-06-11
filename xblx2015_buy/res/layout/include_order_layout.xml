@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/line_order"
+        android:layout_width="@dimen/vote_line_width"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/list_item_vote_line_margin_left"
+        android:background="@color/blue_508CEE"/>
+
+    <FrameLayout
+        android:id="@+id/line_order_right"
+        android:layout_width="@dimen/vote_line_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/list_item_vote_line_margin_left"
+        android:background="@color/red_FF2942"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@+id/ll_order_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/include_timer"
+            layout="@layout/list_item_evidence_timer_left"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_order_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/include_timer"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="@dimen/list_item_vote_item_content_margin"
+            android:layout_marginRight="@dimen/list_item_vote_item_margin_right"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circle5_f"
+            android:padding="@dimen/list_item_vote_content_padding">
+
+            <ImageView
+                android:id="@+id/iv_order_info"
+                android:layout_width="79dp"
+                android:layout_height="53dp"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/tv_order_name"
+                style="@style/text_3_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/iv_order_info"
+                android:ellipsize="end"
+                android:singleLine="true"
+                tools:text="芭提雅双飞五日游"/>
+
+            <TextView
+                android:id="@+id/tv_order_destination"
+                style="@style/text_9_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_order_name"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/iv_order_info"
+                android:ellipsize="end"
+                android:singleLine="true"
+                tools:text="出发地: 内蒙古"/>
+
+            <LinearLayout
+                android:id="@+id/ll_price_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_order_info"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_total_price"
+                    style="@style/text_3_15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:ellipsize="start"
+                    android:singleLine="true"
+                    tools:text="总价: 5000元"/>
+
+                <TextView
+                    android:id="@+id/tv_compensate"
+                    style="@style/text_3_15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/tv_total_price"
+                    android:layout_weight="1"
+                    android:ellipsize="start"
+                    android:singleLine="true"
+                    tools:text="要求赔付: 400元"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_introduction"
+                style="@style/text_3_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_price_layout"
+                android:layout_marginTop="20dp"
+                tools:text="被打被骂, 也是碎了"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

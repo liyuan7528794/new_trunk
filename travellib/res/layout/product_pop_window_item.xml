@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/productImage"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black_alpha50"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/text_f_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="马尔代夫"/>
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/text_9_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥5500元"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

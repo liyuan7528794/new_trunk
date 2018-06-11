@@ -1,0 +1,147 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:crl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_F5">
+    <!--<com.travel.video.widget.VoteLVBMediaView
+        android:id="@+id/voteMediaView"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"/>-->
+    <RelativeLayout
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_upload"
+                style="@style/text_3_16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="上传证据"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="11.5dp"
+                android:layout_gravity="center"
+                android:background="@color/gray_D"></View>
+
+            <TextView
+                android:id="@+id/tv_golive"
+                style="@style/text_3_16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="直播申诉"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="11.5dp"
+                android:layout_gravity="center"
+                android:background="@color/gray_D"></View>
+
+            <TextView
+                android:id="@+id/tv_comment1"
+                style="@style/text_3_16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="写评论"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_end"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/end"
+                style="@style/text_3_16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="众投已结束" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="11.5dp"
+                android:layout_gravity="center"
+                android:background="@color/gray_D"></View>
+
+            <TextView
+                android:id="@+id/tv_comment2"
+                style="@style/text_3_16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="写评论"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="44dp"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_comment_edit"
+                style="@style/text_3_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="请输入评论内容"
+                android:maxLines="3"
+                android:textColorHint="@color/gray_C0"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="11.5dp"
+                android:layout_gravity="center"
+                android:background="@color/gray_D"></View>
+            <TextView
+                android:id="@+id/tv_comment_send"
+                style="@style/text_blue_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_weight="3"
+                android:text="发送"/>
+        </LinearLayout>
+
+        <View style="@style/line_D"/>
+    </RelativeLayout>
+
+    <com.mylhyl.crlayout.SwipeRefreshRecyclerView
+        android:id="@+id/srRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/re"
+        android:layout_below="@+id/voteMediaView"
+        android:listSelector="@android:color/transparent"
+        crl:load_animator="true">
+    </com.mylhyl.crlayout.SwipeRefreshRecyclerView>
+</RelativeLayout>

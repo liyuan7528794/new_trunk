@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mylhyl.crlayout.RefreshScrollviewLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_video"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_F5">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_play_out"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+        <TextView
+            android:id="@+id/tv_none_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="暂无精彩视频"
+            android:textColor="@color/black_3"
+            android:textSize="24dp"
+            android:visibility="gone" />
+    </FrameLayout>
+</com.mylhyl.crlayout.RefreshScrollviewLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/ll_withdraw_application_focus"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/income_icon_style"
+        android:drawableTop="@drawable/icon_money"
+        android:text="@string/businessincome_can_withdraw_cash" />
+
+    <TextView
+        android:id="@+id/tv_money_total"
+        style="@style/text_red_36"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="123" />
+
+    <LinearLayout style="@style/ll_withdraw_cash" >
+
+        <TextView
+            style="@style/text_3_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/withdraw_cash" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_withdraw_value"
+                style="@style/text_3_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:digits="1234567890."
+                android:gravity="center"
+                android:hint="@string/withdraw_cash_input"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColorHint="@color/gray_C0" />
+
+            <View style="@style/line_B2" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/text_3_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_commit_application"
+        style="@style/one_button_style"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/withdraw_application" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/text_3_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp" />
+
+</LinearLayout>

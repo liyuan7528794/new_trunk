@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">红了旅行</string>
+    <string name="myMain">我的主页</string>
+    <string name="coupons">优惠券</string>
+    <string name="login">登录</string>
+    <string name="regist">注册</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about">关于我们</string>
+    <string name="exit">退出登录</string>
+    <string name="cancle">取消</string>
+    <string name="passwordmodify">修改密码</string>
+    <string name="personal_profile">联系客服</string>
+    <string name="start_live">开始直播</string>
+    <string name="area">地区</string>
+    <string name="myOrder">我的订单</string>
+    <string name="hello_world">Hello_world!</string>
+
+    <string name="hint_host_leave">主播暂时离开,\n马上回来..</string>
+</resources>

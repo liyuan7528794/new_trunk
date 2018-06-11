@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="140dp"
+        android:layout_height="wrap_content">
+
+        <com.travel.layout.SelectableRoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:sriv_left_top_corner_radius="2dp"
+            app:sriv_right_top_corner_radius="2dp"
+            app:sriv_left_bottom_corner_radius="2dp"
+            app:sriv_right_bottom_corner_radius="2dp"
+            android:id="@+id/iv_small_city_story_img"
+            android:layout_width="140dp"
+            android:layout_height="106dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/find_ico_play" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:src="@drawable/find_label_cctv" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_small_city_story_title"
+        style="@style/text_5_13"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:ellipsize="end"
+        android:maxLines="1" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/circle3_060">
+
+    <ImageView
+        android:id="@+id/iv_recorder_voice"
+        android:layout_width="38dp"
+        android:layout_height="59dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/microphone1"/>
+
+    <TextView
+        android:id="@+id/tv_timer"
+        style="@style/text_f_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="手指上滑，取消发送"/>
+</RelativeLayout>

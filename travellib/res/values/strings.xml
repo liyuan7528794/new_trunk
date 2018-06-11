@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">travellib</string>
+    <string name="no_more">没有更多了!</string>
+    <string name="current">当前为</string>
+    <string name="net_continue">网络，您要继续吗？</string>
+    <string name="go_on">继续</string>
+    <string name="cancle">取消</string>
+    <string name="errcode_success">支付成功</string>
+    <string name="errcode_cancel">支付取消</string>
+    <string name="errcode_deny">支付被拒绝</string>
+    <string name="errcode_unknown">支付返回</string>
+
+</resources>

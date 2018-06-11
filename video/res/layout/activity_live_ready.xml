@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_alpha50">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="82dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/imageRL"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="250dp"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:id="@+id/cover_imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/live_pic_cover"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:id="@+id/selectLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/go_camera"
+                        style="@style/text_d_14"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/circle4_060"
+                        android:gravity="center"
+                        android:text="拍摄封面"/>
+
+                    <TextView
+                        android:id="@+id/from_storage"
+                        style="@style/text_d_14"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/circle4_060"
+                        android:gravity="center"
+                        android:text="选择封面"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+                <EditText
+                    android:id="@+id/live_title_edit"
+                    style="@style/text_d_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="输入直播标题"
+                    android:textColorHint="@color/white_alpha75"/>
+
+                <View
+                    style="@style/line_D_60"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/productLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/text_f_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关联产品"/>
+
+                <TextView
+                    android:id="@+id/checkProduct"
+                    style="@style/text_f_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:alpha="0.87"
+                    android:background="@null"
+                    android:drawableBottom="@drawable/listitem_divide"
+                    android:hint="请选择标产品"
+                    android:singleLine="true"
+                    android:textColorHint="@color/white_alpha50"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/startLive"
+                style="@style/text_f_18"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/circle4_yellowe0a02b"
+                android:text="@string/start_live"/>
+
+            <TextView
+                android:id="@+id/tv_share_show"
+                style="@style/text_d_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="58dp"
+                android:text="分享至："/>
+
+            <LinearLayout
+                android:id="@+id/ll_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24.7dp"
+                    android:src="@drawable/share_icon_wechat_white"/>
+
+                <ImageView
+                    android:id="@+id/wechatFavorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24.7dp"
+                    android:src="@drawable/share_icon_group_white"/>
+
+                <ImageView
+                    android:id="@+id/qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24.7dp"
+                    android:src="@drawable/share_icon_qq_white"/>
+
+                <ImageView
+                    android:id="@+id/qZone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share_icon_qzone_white"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="23dp"
+        android:src="@drawable/live_icon_close"/>
+</RelativeLayout>

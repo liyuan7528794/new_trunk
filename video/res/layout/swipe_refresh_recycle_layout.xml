@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:crl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <com.mylhyl.crlayout.SwipeRefreshRecyclerView
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_F5"
+        crl:load_animator="true">
+
+    </com.mylhyl.crlayout.SwipeRefreshRecyclerView>
+    <TextView
+        android:id="@+id/none_notify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/none_notify"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:gravity="center"
+        style="@style/text_9_16"/>
+</RelativeLayout>

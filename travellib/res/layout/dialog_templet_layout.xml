@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/circle12_f"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/red_FA7E7F"
+            android:textSize="16dp"
+            tools:text="提示内容！"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        style="@style/line_9"
+        android:layout_below="@+id/linearLayout1"/>
+
+    <LinearLayout
+        android:id="@+id/doubleButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/leftButton"
+            style="@style/text_3_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            tools:text="左按钮"/>
+
+        <View
+            android:id="@+id/views"
+            style="@style/line_wpoint5_9"/>
+
+        <Button
+            android:id="@+id/rightButton"
+            style="@style/text_3_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            tools:text="右按钮"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/oneButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/confirmButton"
+            style="@style/text_3_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="按钮"/>
+    </LinearLayout>
+</LinearLayout>

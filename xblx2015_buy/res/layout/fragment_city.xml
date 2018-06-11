@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="7.5dp"
+    android:paddingRight="7.5dp"
+    android:background="@color/gray_F5">
+    <com.mylhyl.crlayout.SwipeRefreshRecyclerView
+        xmlns:crl="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/srrv_fm_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        crl:load_animator="true"/>
+
+</FrameLayout>

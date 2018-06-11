@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_cctv_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/layout_cctv_video"
+                layout="@layout/adapter_listview_layout"
+                android:layout_width="match_parent"
+                android:layout_height="222dp"></include>
+
+            <RelativeLayout
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="31dp"
+                android:gravity="center"
+                android:onClick="onBack"
+                android:paddingLeft="7dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_video_back"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <com.mylhyl.crlayout.SwipeRefreshRecyclerView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/srrv_video"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:listSelector="@android:color/transparent"
+            app:load_animator="true"></com.mylhyl.crlayout.SwipeRefreshRecyclerView>
+
+        <LinearLayout
+            android:id="@+id/layout_evaluate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <View style="@style/line_E8E9EB"></View>
+
+            <EditText
+                android:id="@+id/send_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/circle100_f8fbff_one_eeeff1"
+                android:gravity="center_vertical"
+                android:hint="写评论"
+                android:imeOptions="actionSend"
+                android:inputType="text"
+                android:paddingBottom="11dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="11dp"
+                android:textColor="@color/black_6C6F73"
+                android:textColorHint="@color/gray_97"
+                android:textSize="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/cctv_full_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>

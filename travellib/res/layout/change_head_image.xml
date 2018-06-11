@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/headImg"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/common_pic_user"/>
+
+    <TextView
+        android:id="@+id/text"
+        style="@style/text_3_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="设置头像"/>
+
+    <Button
+        android:id="@+id/commitButton"
+        style="@style/text_f_16"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/circle4_red"
+        android:text="完成"/>
+</RelativeLayout>
